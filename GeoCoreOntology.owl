@@ -74,6 +74,13 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Geological_Object"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#generatedBy"/>
+            <Class IRI="#Geological_Process"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Geological_Object"/>
         <ObjectMinCardinality cardinality="1">
             <ObjectProperty IRI="#constitutedBy"/>
             <Class IRI="#Earth_Material"/>
