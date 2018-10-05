@@ -54,6 +54,13 @@
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Geological_Age"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000080"/>
+            <Class IRI="#Geological_Object"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Geological_Boundary"/>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000140"/>
     </SubClassOf>
