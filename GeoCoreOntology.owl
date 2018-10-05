@@ -62,6 +62,20 @@
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Geological_Object"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#constitutedBy"/>
+            <Class IRI="#Earth_Material"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Geological_Object"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#constitutedBy"/>
+            <Class IRI="#Earth_Material"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Geological_Process"/>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
     </SubClassOf>
