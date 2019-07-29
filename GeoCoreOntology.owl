@@ -31,6 +31,9 @@
         <Class IRI="#UFRGS:GeoCoreOntology_Earth_Material"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#UFRGS:GeoCoreOntology_Geological_Boundary"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Geological_Contact"/>
     </Declaration>
     <Declaration>
@@ -38,9 +41,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#UFRGS:GeoCoreOntology_Earth_Fluid"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Geological_Boundary"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#generatedBy"/>
@@ -58,10 +58,6 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000080"/>
             <Class IRI="#UFRGS:GeoCoreOntology_Geological_Object"/>
         </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Geological_Boundary"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000140"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Geological_Contact"/>
@@ -82,6 +78,10 @@
     <SubClassOf>
         <Class IRI="#UFRGS:GeoCoreOntology_Earth_Material"/>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UFRGS:GeoCoreOntology_Geological_Boundary"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000140"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UFRGS:GeoCoreOntology_Geological_Object"/>
@@ -137,11 +137,6 @@
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#Geological_Age</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">It is an entity that qualifies a Geological Object. It corresponds to the time instant at which or the time interval during which a Geological Object was generated or transformed.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Geological_Boundary</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A Geological Boundary corresponds to a physical discontinuity of any nature located on the external surface of a Geological Object.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -202,6 +197,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_Earth_Material</IRI>
         <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Material da Terra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#UFRGS:GeoCoreOntology_Geological_Boundary</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A Geological Boundary is a Continuant Fiat Boundary corresponding to a physical discontinuity of any nature, located on the external surface of a Geological Object.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UFRGS:GeoCoreOntology_Geological_Boundary</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Geological Boundary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UFRGS:GeoCoreOntology_Geological_Boundary</IRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Limite Geológico</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
