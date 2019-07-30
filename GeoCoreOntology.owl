@@ -199,6 +199,16 @@
         <Literal xml:lang="en">It is a Quality of Geological Object related to a Geological Time Interval during which some Geological Process operated. The age of a Geological Object is the age of the process that generated this object.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UFRGS:GeoCoreOntology_Geological_Age</IRI>
+        <Literal xml:lang="en">Geological Age</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UFRGS:GeoCoreOntology_Geological_Age</IRI>
+        <Literal xml:lang="pt">Idade Geológica</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#UFRGS:GeoCoreOntology_Geological_Boundary</IRI>
         <Literal xml:lang="en">A Geological Boundary is a Continuant Fiat Boundary corresponding to a physical discontinuity of any nature, located on the external surface of a Geological Object.</Literal>
