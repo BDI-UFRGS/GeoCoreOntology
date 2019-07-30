@@ -46,10 +46,19 @@
         <Class IRI="#UFRGS:GeoCoreOntology_Rock"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#UFRGS:GeoCoreOntology_age_of"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#UFRGS:GeoCoreOntology_constituted_by"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generated_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generated_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#UFRGS:GeoCoreOntology_has_age"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="#UFRGS:GeoCoreOntology_Geological_Object"/>
@@ -63,6 +72,18 @@
                 <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generated_by"/>
                 <Class IRI="#UFRGS:GeoCoreOntology_Geological_Process"/>
             </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#UFRGS:GeoCoreOntology_constituted_by"/>
+                <Class IRI="#UFRGS:GeoCoreOntology_Earth_Material"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generated_by"/>
+                <Class IRI="#UFRGS:GeoCoreOntology_Geological_Process"/>
+            </ObjectAllValuesFrom>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#UFRGS:GeoCoreOntology_has_age"/>
+                <Class IRI="#UFRGS:GeoCoreOntology_Geological_Age"/>
+            </ObjectExactCardinality>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -89,10 +110,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UFRGS:GeoCoreOntology_Geological_Age"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000080"/>
-            <Class IRI="#UFRGS:GeoCoreOntology_Geological_Object"/>
-        </ObjectAllValuesFrom>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000056"/>
+            <Class IRI="#UFRGS:GeoCoreOntology_Geological_Time_Interval"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UFRGS:GeoCoreOntology_Geological_Boundary"/>
@@ -101,6 +122,13 @@
     <SubClassOf>
         <Class IRI="#UFRGS:GeoCoreOntology_Geological_Contact"/>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000145"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UFRGS:GeoCoreOntology_Geological_Contact"/>
+        <ObjectExactCardinality cardinality="2">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000080"/>
+            <Class IRI="#UFRGS:GeoCoreOntology_Geological_Object"/>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UFRGS:GeoCoreOntology_Geological_Object"/>
@@ -114,6 +142,13 @@
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generated_by"/>
             <Class IRI="#UFRGS:GeoCoreOntology_Geological_Process"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UFRGS:GeoCoreOntology_Geological_Object"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#UFRGS:GeoCoreOntology_has_age"/>
+            <Class IRI="#UFRGS:GeoCoreOntology_Geological_Age"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -139,6 +174,10 @@
         <Class IRI="#UFRGS:GeoCoreOntology_Rock"/>
     </DisjointClasses>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#UFRGS:GeoCoreOntology_age_of"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000080"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#UFRGS:GeoCoreOntology_constituted_by"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
@@ -146,6 +185,18 @@
         <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generated_by"/>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000056"/>
     </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generated_in"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#UFRGS:GeoCoreOntology_has_age"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#UFRGS:GeoCoreOntology_age_of"/>
+        <ObjectProperty IRI="#UFRGS:GeoCoreOntology_has_age"/>
+    </InverseObjectProperties>
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#UFRGS:GeoCoreOntology_constituted_by"/>
     </AsymmetricObjectProperty>
@@ -310,6 +361,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#UFRGS:GeoCoreOntology_age_of</IRI>
+        <Literal xml:lang="en">The relation between a Geological Age and a Geological Object. Inverse of has age relation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UFRGS:GeoCoreOntology_age_of</IRI>
+        <Literal xml:lang="en">age of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#UFRGS:GeoCoreOntology_constituted_by</IRI>
         <Literal>The relation between some material entity and the material that it is made of.</Literal>
     </AnnotationAssertion>
@@ -332,6 +393,26 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_generated_by</IRI>
         <Literal xml:lang="en">generated by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#UFRGS:GeoCoreOntology_generated_in</IRI>
+        <Literal xml:lang="en">The Geological Time Interval in which the object was generated.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UFRGS:GeoCoreOntology_generated_in</IRI>
+        <Literal xml:lang="en">generated in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#UFRGS:GeoCoreOntology_has_age</IRI>
+        <Literal xml:lang="en">The relation between a Geological Object and its Geological Age.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UFRGS:GeoCoreOntology_has_age</IRI>
+        <Literal xml:lang="en">has age</Literal>
     </AnnotationAssertion>
 </Ontology>
 
