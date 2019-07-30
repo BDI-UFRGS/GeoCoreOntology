@@ -19,9 +19,6 @@
         <Class IRI="#Geological_Process"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Geological_Structure"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#UFRGS:GeoCoreOntology_Earth_Fluid"/>
     </Declaration>
     <Declaration>
@@ -40,6 +37,9 @@
         <Class IRI="#UFRGS:GeoCoreOntology_Geological_Object"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#UFRGS:GeoCoreOntology_Geological_Structure"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#UFRGS:GeoCoreOntology_Rock"/>
     </Declaration>
     <Declaration>
@@ -51,10 +51,6 @@
     <SubClassOf>
         <Class IRI="#Geological_Process"/>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Geological_Structure"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000031"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UFRGS:GeoCoreOntology_Earth_Fluid"/>
@@ -109,6 +105,10 @@
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#UFRGS:GeoCoreOntology_Geological_Structure"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#UFRGS:GeoCoreOntology_Rock"/>
         <Class IRI="#UFRGS:GeoCoreOntology_Earth_Material"/>
     </SubClassOf>
@@ -137,11 +137,6 @@
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#Geological_Process</IRI>
         <Literal xml:lang="en">It is a physical, chemical or biological process or series of processes that generate, destroy or modify the shape, the internal arrangement or the composition of at least one Geological Object.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Geological_Structure</IRI>
-        <Literal xml:lang="en">A Geological Structure is a pattern that defines at various scales the arrangement of the elements that constitutes a Rock. Instances of Geological Structure are defined independently of the support in which they are concretized so that one Geological Structure can be repeated on different supports.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -247,6 +242,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_Geological_Object</IRI>
         <Literal xml:lang="pt">Objeto Geológico</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#UFRGS:GeoCoreOntology_Geological_Structure</IRI>
+        <Literal xml:lang="en">It is a Generically Dependent Continuant which describes the internal arrangement of a Geological Object, i.e., the configuration and the mutual relationships of its different parts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UFRGS:GeoCoreOntology_Geological_Structure</IRI>
+        <Literal xml:lang="pt">Estrutura Geológica</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UFRGS:GeoCoreOntology_Geological_Structure</IRI>
+        <Literal xml:lang="en">Geological Structure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
