@@ -93,6 +93,20 @@
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000145"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#UFRGS:GeoCoreOntology_Geological_Object"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#UFRGS:GeoCoreOntology_constituted_by"/>
+            <Class IRI="#UFRGS:GeoCoreOntology_Earth_Material"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UFRGS:GeoCoreOntology_Geological_Object"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generated_by"/>
+            <Class IRI="#UFRGS:GeoCoreOntology_Geological_Process"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#UFRGS:GeoCoreOntology_Geological_Process"/>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
     </SubClassOf>
