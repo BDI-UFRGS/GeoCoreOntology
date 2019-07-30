@@ -40,6 +40,9 @@
         <Class IRI="#UFRGS:GeoCoreOntology_Geological_Structure"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#UFRGS:GeoCoreOntology_Geological_Time_Interval"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#UFRGS:GeoCoreOntology_Rock"/>
     </Declaration>
     <Declaration>
@@ -107,6 +110,10 @@
     <SubClassOf>
         <Class IRI="#UFRGS:GeoCoreOntology_Geological_Structure"/>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UFRGS:GeoCoreOntology_Geological_Time_Interval"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000038"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UFRGS:GeoCoreOntology_Rock"/>
@@ -267,6 +274,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_Geological_Structure</IRI>
         <Literal xml:lang="en">Geological Structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#UFRGS:GeoCoreOntology_Geological_Time_Interval</IRI>
+        <Literal xml:lang="en">It is a Temporal Region of one dimension within the Global Geological Time. A Geological Time Interval may be occupied by one or several Geological Processes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UFRGS:GeoCoreOntology_Geological_Time_Interval</IRI>
+        <Literal xml:lang="en">Geological Time Interval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UFRGS:GeoCoreOntology_Geological_Time_Interval</IRI>
+        <Literal xml:lang="pt">Intervalo de Tempo Geológico</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
