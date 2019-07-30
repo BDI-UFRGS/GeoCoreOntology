@@ -16,9 +16,6 @@
     <Import>http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl</Import>
     <Import>http://purl.obolibrary.org/obo/ro/core.owl</Import>
     <Declaration>
-        <Class IRI="#Geological_Process"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#UFRGS:GeoCoreOntology_Earth_Fluid"/>
     </Declaration>
     <Declaration>
@@ -37,6 +34,9 @@
         <Class IRI="#UFRGS:GeoCoreOntology_Geological_Object"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#UFRGS:GeoCoreOntology_Geological_Process"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#UFRGS:GeoCoreOntology_Geological_Structure"/>
     </Declaration>
     <Declaration>
@@ -48,10 +48,6 @@
     <Declaration>
         <ObjectProperty IRI="#generatedBy"/>
     </Declaration>
-    <SubClassOf>
-        <Class IRI="#Geological_Process"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
-    </SubClassOf>
     <SubClassOf>
         <Class IRI="#UFRGS:GeoCoreOntology_Earth_Fluid"/>
         <Class IRI="#UFRGS:GeoCoreOntology_Earth_Material"/>
@@ -94,7 +90,7 @@
         <Class IRI="#UFRGS:GeoCoreOntology_Geological_Object"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#generatedBy"/>
-            <Class IRI="#Geological_Process"/>
+            <Class IRI="#UFRGS:GeoCoreOntology_Geological_Process"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -103,6 +99,10 @@
             <ObjectProperty IRI="#constitutedBy"/>
             <Class IRI="#UFRGS:GeoCoreOntology_Earth_Material"/>
         </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UFRGS:GeoCoreOntology_Geological_Process"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UFRGS:GeoCoreOntology_Geological_Structure"/>
@@ -133,11 +133,6 @@
     <IrreflexiveObjectProperty>
         <ObjectProperty IRI="#constitutedBy"/>
     </IrreflexiveObjectProperty>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Geological_Process</IRI>
-        <Literal xml:lang="en">It is a physical, chemical or biological process or series of processes that generate, destroy or modify the shape, the internal arrangement or the composition of at least one Geological Object.</Literal>
-    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#constitutedBy</IRI>
@@ -242,6 +237,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_Geological_Object</IRI>
         <Literal xml:lang="pt">Objeto Geológico</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#UFRGS:GeoCoreOntology_Geological_Process</IRI>
+        <Literal xml:lang="en">It is a physical, chemical or biological process or series of processes that generate, destroy or modify the shape, the internal arrangement or the composition of at least one Geological Object.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UFRGS:GeoCoreOntology_Geological_Process</IRI>
+        <Literal xml:lang="en">Geological Process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UFRGS:GeoCoreOntology_Geological_Process</IRI>
+        <Literal xml:lang="pt">Processo Geológico</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
