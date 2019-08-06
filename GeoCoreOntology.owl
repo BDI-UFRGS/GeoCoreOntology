@@ -15,6 +15,18 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl</Import>
     <Import>http://purl.obolibrary.org/obo/ro/core.owl</Import>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+        <Literal>Luan Fonseca Garcia</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+        <Literal xml:lang="en">Mara Abel</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+        <Literal xml:lang="en">Michel Perrin</Literal>
+    </Annotation>
     <Declaration>
         <Class IRI="#UFRGS:GeoCoreOntology_Earth_Fluid"/>
     </Declaration>
