@@ -229,12 +229,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_Earth_Fluid</IRI>
-        <Literal xml:lang="en">Earth Fluid</Literal>
+        <Literal xml:lang="en">earth fluid</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_Earth_Fluid</IRI>
-        <Literal xml:lang="pt">Fluido da Terra</Literal>
+        <Literal xml:lang="pt">fluido da terra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -244,12 +244,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_Earth_Material</IRI>
-        <Literal xml:lang="en">Earth Material</Literal>
+        <Literal xml:lang="pt">Material da Terra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_Earth_Material</IRI>
-        <Literal xml:lang="pt">Material da Terra</Literal>
+        <Literal xml:lang="en">earth material</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -259,12 +259,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_Geological_Age</IRI>
-        <Literal xml:lang="en">Geological Age</Literal>
+        <Literal xml:lang="en">geological age</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_Geological_Age</IRI>
-        <Literal xml:lang="pt">Idade Geológica</Literal>
+        <Literal xml:lang="pt">idade geológica</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -274,12 +274,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_Geological_Boundary</IRI>
-        <Literal xml:lang="en">Geological Boundary</Literal>
+        <Literal xml:lang="en">geological boundary</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_Geological_Boundary</IRI>
-        <Literal xml:lang="pt">Limite Geológico</Literal>
+        <Literal xml:lang="pt">limite geológico</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -289,12 +289,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_Geological_Contact</IRI>
-        <Literal xml:lang="pt">Contato Geológico</Literal>
+        <Literal xml:lang="pt">contato geológico</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_Geological_Contact</IRI>
-        <Literal xml:lang="en">Geological Contact</Literal>
+        <Literal xml:lang="en">geological contact</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -304,12 +304,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_Geological_Object</IRI>
-        <Literal xml:lang="en">Geological Object</Literal>
+        <Literal xml:lang="en">geological object</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_Geological_Object</IRI>
-        <Literal xml:lang="pt">Objeto Geológico</Literal>
+        <Literal xml:lang="pt">objeto geológico</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -319,12 +319,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_Geological_Process</IRI>
-        <Literal xml:lang="en">Geological Process</Literal>
+        <Literal xml:lang="en">geological process</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_Geological_Process</IRI>
-        <Literal xml:lang="pt">Processo Geológico</Literal>
+        <Literal xml:lang="pt">processo geológico</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -334,12 +334,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_Geological_Structure</IRI>
-        <Literal xml:lang="pt">Estrutura Geológica</Literal>
+        <Literal xml:lang="pt">estrutura geológica</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_Geological_Structure</IRI>
-        <Literal xml:lang="en">Geological Structure</Literal>
+        <Literal xml:lang="en">geological structure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -349,12 +349,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_Geological_Time_Interval</IRI>
-        <Literal xml:lang="en">Geological Time Interval</Literal>
+        <Literal xml:lang="en">geological time interval</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_Geological_Time_Interval</IRI>
-        <Literal xml:lang="pt">Intervalo de Tempo Geológico</Literal>
+        <Literal xml:lang="pt">intervalo de tempo geológico</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -364,12 +364,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_Rock</IRI>
-        <Literal xml:lang="en">Rocha</Literal>
+        <Literal xml:lang="pt">rocha</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_Rock</IRI>
-        <Literal xml:lang="en">Rock</Literal>
+        <Literal xml:lang="en">rock</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
