@@ -7,46 +7,40 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology"
      versionIRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology/1.0">
-    <Prefix name="" IRI="https://www.inf.ufrgs.br/bdi/ontologies/2018/8/geocoreontology"/>
+    <Prefix name="" IRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Import>http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl</Import>
     <Import>http://purl.obolibrary.org/obo/ro/core.owl</Import>
+    <Import>http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl</Import>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
-        <Literal>Luan Fonseca Garcia</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Luan Fonseca Garcia</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
-        <Literal xml:lang="en">Mara Abel</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Michel Perrin</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
-        <Literal xml:lang="en">Michel Perrin</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Mara Abel</Literal>
     </Annotation>
     <Declaration>
-        <Class IRI="#UFRGS:GeoCoreOntology_earth_fluid"/>
+        <ObjectProperty IRI="#UFRGS:GeoCoreOntology_constituted_by"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#UFRGS:GeoCoreOntology_earth_material"/>
+        <ObjectProperty IRI="#UFRGS:GeoCoreOntology_age_of"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#UFRGS:GeoCoreOntology_geological_age"/>
+        <Class IRI="#UFRGS:GeoCoreOntology_geological_process"/>
     </Declaration>
     <Declaration>
         <Class IRI="#UFRGS:GeoCoreOntology_geological_boundary"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#UFRGS:GeoCoreOntology_geological_contact"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#UFRGS:GeoCoreOntology_geological_object"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#UFRGS:GeoCoreOntology_geological_process"/>
+        <ObjectProperty IRI="#UFRGS:GeoCoreOntology_has_age"/>
     </Declaration>
     <Declaration>
         <Class IRI="#UFRGS:GeoCoreOntology_geological_structure"/>
@@ -55,22 +49,28 @@
         <Class IRI="#UFRGS:GeoCoreOntology_geological_time_interval"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#UFRGS:GeoCoreOntology_rock"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#UFRGS:GeoCoreOntology_age_of"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#UFRGS:GeoCoreOntology_constituted_by"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generated_by"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generated_in"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#UFRGS:GeoCoreOntology_has_age"/>
+        <Class IRI="#UFRGS:GeoCoreOntology_rock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UFRGS:GeoCoreOntology_earth_fluid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UFRGS:GeoCoreOntology_geological_age"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UFRGS:GeoCoreOntology_geological_contact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UFRGS:GeoCoreOntology_earth_material"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UFRGS:GeoCoreOntology_geological_object"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="#UFRGS:GeoCoreOntology_geological_object"/>
@@ -224,211 +224,211 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#UFRGS:GeoCoreOntology_age_of</IRI>
-        <Literal xml:lang="en">The relation between a Geological Age and a Geological Object. Inverse of has age relation.</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The relation between a Geological Age and a Geological Object. Inverse of has age relation.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_age_of</IRI>
-        <Literal xml:lang="en">age of</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">age of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#UFRGS:GeoCoreOntology_constituted_by</IRI>
-        <Literal>The relation between some material entity and the material that it is made of.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The relation between some material entity and the material that it is made of.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>#UFRGS:GeoCoreOntology_constituted_by</IRI>
-        <Literal>Evnine, S. J. (2011). Constitution and composition: Three approaches to their relation. ProtoSociology, 27, 212-235.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Evnine, S. J. (2011). Constitution and composition: Three approaches to their relation. ProtoSociology, 27, 212-235.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_constituted_by</IRI>
-        <Literal xml:lang="en">constituted by</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">constituted by</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#UFRGS:GeoCoreOntology_earth_fluid</IRI>
-        <Literal xml:lang="en">An Earth Material that represents a volume of fluid. Earth Fluids can be water, oil, gas or a mixture of those.</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An Earth Material that represents a volume of fluid. Earth Fluids can be water, oil, gas or a mixture of those.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_earth_fluid</IRI>
-        <Literal xml:lang="en">earth fluid</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">earth fluid</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_earth_fluid</IRI>
-        <Literal xml:lang="pt">fluido da terra</Literal>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">fluido da terra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#UFRGS:GeoCoreOntology_earth_material</IRI>
-        <Literal xml:lang="en">Earth Material is a natural amount of matter, solid, fluid or unconsolidated, generated by a Geological Process. Earth Material is rigid and provides its own identity, but holds no unity criteria.</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Earth Material is a natural amount of matter, solid, fluid or unconsolidated, generated by a Geological Process. Earth Material is rigid and provides its own identity, but holds no unity criteria.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_earth_material</IRI>
-        <Literal xml:lang="pt">Material da Terra</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">earth material</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_earth_material</IRI>
-        <Literal xml:lang="en">earth material</Literal>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">material geologico</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#UFRGS:GeoCoreOntology_generated_by</IRI>
-        <Literal>A relation between a continuant and a process, in which the continuant was generated by the process</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A relation between a continuant and a process, in which the continuant was generated by the process</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_generated_by</IRI>
-        <Literal xml:lang="en">generated by</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">generated by</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#UFRGS:GeoCoreOntology_generated_in</IRI>
-        <Literal xml:lang="en">The Geological Time Interval in which the object was generated.</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The Geological Time Interval in which the object was generated.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_generated_in</IRI>
-        <Literal xml:lang="en">generated in</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">generated in</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#UFRGS:GeoCoreOntology_geological_age</IRI>
-        <Literal xml:lang="en">It is a Quality of Geological Object related to a Geological Time Interval during which some Geological Process operated. The age of a Geological Object is the age of the process that generated this object.</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">It is a Quality of Geological Object related to a Geological Time Interval during which some Geological Process operated. The age of a Geological Object is the age of the process that generated this object.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_geological_age</IRI>
-        <Literal xml:lang="en">geological age</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">geological age</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_geological_age</IRI>
-        <Literal xml:lang="pt">idade geológica</Literal>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">idade geológica</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#UFRGS:GeoCoreOntology_geological_boundary</IRI>
-        <Literal xml:lang="en">A Geological Boundary is a Continuant Fiat Boundary corresponding to a physical discontinuity of any nature, located on the external surface of a Geological Object.</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A Geological Boundary is a Continuant Fiat Boundary corresponding to a physical discontinuity of any nature, located on the external surface of a Geological Object.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_geological_boundary</IRI>
-        <Literal xml:lang="en">geological boundary</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">geological boundary</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_geological_boundary</IRI>
-        <Literal xml:lang="pt">limite geológico</Literal>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">limite geológico</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#UFRGS:GeoCoreOntology_geological_contact</IRI>
-        <Literal xml:lang="en">It is a Relational Quality which relates two Geologic Objects having the same dimension (1D, 2D, or 3D), whose external boundaries are adjacent to each other.</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">It is a Relational Quality which relates two Geologic Objects having the same dimension (1D, 2D, or 3D), whose external boundaries are adjacent to each other.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_geological_contact</IRI>
-        <Literal xml:lang="pt">contato geológico</Literal>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">contato geológico</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_geological_contact</IRI>
-        <Literal xml:lang="en">geological contact</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">geological contact</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#UFRGS:GeoCoreOntology_geological_object</IRI>
-        <Literal xml:lang="en">A Geological Object is a rigid entity that provides its own identity and holds a unity criteria. A Geological Object is constituted by Earth Material and is generated by some Geological Process.</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A Geological Object is a rigid entity that provides its own identity and holds a unity criteria. A Geological Object is constituted by Earth Material and is generated by some Geological Process.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_geological_object</IRI>
-        <Literal xml:lang="en">geological object</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">geological object</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_geological_object</IRI>
-        <Literal xml:lang="pt">objeto geológico</Literal>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">objeto geológico</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#UFRGS:GeoCoreOntology_geological_process</IRI>
-        <Literal xml:lang="en">It is a physical, chemical or biological process or series of processes that generate, destroy or modify the shape, the internal arrangement or the composition of at least one Geological Object.</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">It is a physical, chemical or biological process or series of processes that generate, destroy or modify the shape, the internal arrangement or the composition of at least one Geological Object.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_geological_process</IRI>
-        <Literal xml:lang="en">geological process</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">geological process</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_geological_process</IRI>
-        <Literal xml:lang="pt">processo geológico</Literal>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">processo geológico</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#UFRGS:GeoCoreOntology_geological_structure</IRI>
-        <Literal xml:lang="en">It is a Generically Dependent Continuant which describes the internal arrangement of a Geological Object, i.e., the configuration and the mutual relationships of its different parts.</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">It is a Generically Dependent Continuant which describes the internal arrangement of a Geological Object, i.e., the configuration and the mutual relationships of its different parts.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_geological_structure</IRI>
-        <Literal xml:lang="pt">estrutura geológica</Literal>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">estrutura geológica</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_geological_structure</IRI>
-        <Literal xml:lang="en">geological structure</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">geological structure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#UFRGS:GeoCoreOntology_geological_time_interval</IRI>
-        <Literal xml:lang="en">It is a Temporal Region of one dimension within the Global Geological Time. A Geological Time Interval may be occupied by one or several Geological Processes.</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">It is a Temporal Region of one dimension within the Global Geological Time. A Geological Time Interval may be occupied by one or several Geological Processes.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_geological_time_interval</IRI>
-        <Literal xml:lang="en">geological time interval</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">geological time interval</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_geological_time_interval</IRI>
-        <Literal xml:lang="pt">intervalo de tempo geológico</Literal>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">intervalo de tempo geológico</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#UFRGS:GeoCoreOntology_has_age</IRI>
-        <Literal xml:lang="en">The relation between a Geological Object and its Geological Age.</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The relation between a Geological Object and its Geological Age.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_has_age</IRI>
-        <Literal xml:lang="en">has age</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has age</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#UFRGS:GeoCoreOntology_rock</IRI>
-        <Literal xml:lang="en">Rock is a solid consolidated Earth Material, made of polycrystalline, monocrystalline or amorphous mineral matter or material of biological original. Rock is defined at a scale of observation that is such that it can be considered homogeneous even when it is constituted by an aggregate of particules.</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Rock is a solid consolidated Earth Material, made of polycrystalline, monocrystalline or amorphous mineral matter or material of biological original. Rock is defined at a scale of observation that is such that it can be considered homogeneous even when it is constituted by an aggregate of particules.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_rock</IRI>
-        <Literal xml:lang="pt">rocha</Literal>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">rocha</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_rock</IRI>
-        <Literal xml:lang="en">rock</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">rock</Literal>
     </AnnotationAssertion>
 </Ontology>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 
