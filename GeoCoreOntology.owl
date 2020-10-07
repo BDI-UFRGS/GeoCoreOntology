@@ -82,35 +82,17 @@
         <ObjectIntersectionOf>
             <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
             <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#UFRGS:GeoCoreOntology_constituted_by"/>
-                <Class IRI="#UFRGS:GeoCoreOntology_earth_material"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generated_by"/>
-                <Class IRI="#UFRGS:GeoCoreOntology_geological_process"/>
-            </ObjectSomeValuesFrom>
-            <ObjectAllValuesFrom>
-                <ObjectProperty IRI="#UFRGS:GeoCoreOntology_constituted_by"/>
-                <Class IRI="#UFRGS:GeoCoreOntology_earth_material"/>
-            </ObjectAllValuesFrom>
-            <ObjectAllValuesFrom>
-                <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generated_by"/>
-                <Class IRI="#UFRGS:GeoCoreOntology_geological_process"/>
-            </ObjectAllValuesFrom>
-            <ObjectExactCardinality cardinality="1">
                 <ObjectProperty IRI="#UFRGS:GeoCoreOntology_has_age"/>
                 <Class IRI="#UFRGS:GeoCoreOntology_geological_age"/>
-            </ObjectExactCardinality>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#UFRGS:GeoCoreOntology_geological_process"/>
-        <ObjectIntersectionOf>
-            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <Class IRI="#UFRGS:GeoCoreOntology_geological_object"/>
             </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#UFRGS:GeoCoreOntology_constituted_by"/>
+                <Class IRI="#UFRGS:GeoCoreOntology_earth_material"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generated_by"/>
+                <Class IRI="#UFRGS:GeoCoreOntology_geological_process"/>
+            </ObjectAllValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <SubClassOf>
@@ -148,25 +130,15 @@
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#UFRGS:GeoCoreOntology_geological_object"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#UFRGS:GeoCoreOntology_constituted_by"/>
-            <Class IRI="#UFRGS:GeoCoreOntology_earth_material"/>
-        </ObjectAllValuesFrom>
+        <Class IRI="#UFRGS:GeoCoreOntology_geological_process"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#UFRGS:GeoCoreOntology_geological_object"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generated_by"/>
-            <Class IRI="#UFRGS:GeoCoreOntology_geological_process"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#UFRGS:GeoCoreOntology_geological_object"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#UFRGS:GeoCoreOntology_has_age"/>
-            <Class IRI="#UFRGS:GeoCoreOntology_geological_age"/>
-        </ObjectAllValuesFrom>
+        <Class IRI="#UFRGS:GeoCoreOntology_geological_process"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+            <Class IRI="#UFRGS:GeoCoreOntology_geological_object"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UFRGS:GeoCoreOntology_geological_structure"/>
