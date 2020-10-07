@@ -5,8 +5,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology"
-     versionIRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology/1.0">
+     ontologyIRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology">
     <Prefix name="" IRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -34,13 +33,13 @@
         <ObjectProperty IRI="#UFRGS:GeoCoreOntology_age_of"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#UFRGS:GeoCoreOntology_geological_process"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#UFRGS:GeoCoreOntology_has_age"/>
     </Declaration>
     <Declaration>
         <Class IRI="#UFRGS:GeoCoreOntology_geological_boundary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UFRGS:GeoCoreOntology_geological_process"/>
     </Declaration>
     <Declaration>
         <Class IRI="#UFRGS:GeoCoreOntology_unconsolidated_earth_material"/>
@@ -61,22 +60,22 @@
         <Class IRI="#UFRGS:GeoCoreOntology_rock"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#UFRGS:GeoCoreOntology_earth_fluid"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#UFRGS:GeoCoreOntology_geological_age"/>
     </Declaration>
     <Declaration>
         <Class IRI="#UFRGS:GeoCoreOntology_mineral"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#UFRGS:GeoCoreOntology_earth_fluid"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#UFRGS:GeoCoreOntology_geological_contact"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#UFRGS:GeoCoreOntology_geological_object"/>
+        <Class IRI="#UFRGS:GeoCoreOntology_earth_material"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#UFRGS:GeoCoreOntology_earth_material"/>
+        <Class IRI="#UFRGS:GeoCoreOntology_geological_object"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="#UFRGS:GeoCoreOntology_geological_object"/>
