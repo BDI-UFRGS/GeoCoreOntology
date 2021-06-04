@@ -212,6 +212,19 @@
         <Class IRI="#UFRGS:GeoCoreOntology_earth_material"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#UFRGS:GeoCoreOntology_rock"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#UFRGS:GeoCoreOntology_constituted_by"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/BFO_0000027"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000115"/>
+                    <Class IRI="#UFRGS:GeoCoreOntology_geological_object"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#UFRGS:GeoCoreOntology_unconsolidated_earth_material"/>
         <Class IRI="#UFRGS:GeoCoreOntology_earth_material"/>
     </SubClassOf>
