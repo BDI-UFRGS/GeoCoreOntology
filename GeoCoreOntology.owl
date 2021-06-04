@@ -56,9 +56,6 @@
         <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generated_by"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#UFRGS:GeoCoreOntology_carrier_of"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generated_in"/>
     </Declaration>
     <Declaration>
@@ -83,25 +80,13 @@
         <Class IRI="#UFRGS:GeoCoreOntology_geological_contact"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generically_depends_on"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#UFRGS:GeoCoreOntology_earth_material"/>
     </Declaration>
     <Declaration>
         <Class IRI="#UFRGS:GeoCoreOntology_geological_object"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000058"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000052"/>
-    </Declaration>
-    <Declaration>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
@@ -146,18 +131,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UFRGS:GeoCoreOntology_geological_boundary"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000140"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000146"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UFRGS:GeoCoreOntology_geological_contact"/>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000145"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#UFRGS:GeoCoreOntology_geological_contact"/>
-        <ObjectExactCardinality cardinality="2">
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000052"/>
-            <Class IRI="#UFRGS:GeoCoreOntology_geological_object"/>
-        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UFRGS:GeoCoreOntology_geological_object"/>
@@ -205,26 +183,6 @@
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000031"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#UFRGS:GeoCoreOntology_geological_structure"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000058"/>
-            <ObjectIntersectionOf>
-                <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000052"/>
-                    <Class IRI="#UFRGS:GeoCoreOntology_geological_object"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#UFRGS:GeoCoreOntology_geological_structure"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generically_depends_on"/>
-            <Class IRI="#UFRGS:GeoCoreOntology_geological_object"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#UFRGS:GeoCoreOntology_geological_time_interval"/>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000038"/>
     </SubClassOf>
@@ -266,10 +224,6 @@
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000197"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#UFRGS:GeoCoreOntology_carrier_of"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generated_by"/>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000056"/>
     </SubObjectPropertyOf>
@@ -285,10 +239,6 @@
         <ObjectProperty IRI="#UFRGS:GeoCoreOntology_age_of"/>
         <ObjectProperty IRI="#UFRGS:GeoCoreOntology_has_age"/>
     </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#UFRGS:GeoCoreOntology_carrier_of"/>
-        <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generically_depends_on"/>
-    </InverseObjectProperties>
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#UFRGS:GeoCoreOntology_constituted_by"/>
     </AsymmetricObjectProperty>
@@ -301,22 +251,6 @@
     <IrreflexiveObjectProperty>
         <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generated_by"/>
     </IrreflexiveObjectProperty>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#UFRGS:GeoCoreOntology_carrier_of"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000004"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generically_depends_on"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000031"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#UFRGS:GeoCoreOntology_carrier_of"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000031"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generically_depends_on"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000004"/>
-    </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#UFRGS:GeoCoreOntology_age_of</IRI>
@@ -326,41 +260,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_age_of</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">age of</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
-        <IRI>#UFRGS:GeoCoreOntology_carrier_of</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Molecules of DNA are carriers of genetic information</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
-        <IRI>#UFRGS:GeoCoreOntology_carrier_of</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This copy of War and Peace is carrier of the novel written by Tolstoy</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
-        <IRI>#UFRGS:GeoCoreOntology_carrier_of</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This hard drive is carrier of these data items</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#UFRGS:GeoCoreOntology_carrier_of</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The relation between an independent continuant that is not a spatial region and is the carrier of some g-dependent continuant</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
-        <IRI>#UFRGS:GeoCoreOntology_carrier_of</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This relation was defined in the BFO 2020 text. We added it in the GeoCore Ontology because the RO ontology didn&apos;t add it yet.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#UFRGS:GeoCoreOntology_carrier_of</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">BFO 2020</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#UFRGS:GeoCoreOntology_carrier_of</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">carrier of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -453,41 +352,6 @@ say that it generated this new geological object or earth material. Thus, every 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeoCoreOntology_generated_in</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">generated in</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
-        <IRI>#UFRGS:GeoCoreOntology_generically_depends_on</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The pattern shared by chess boards g-depends on any chess board.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
-        <IRI>#UFRGS:GeoCoreOntology_generically_depends_on</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The score of a symphony g-depends on a copy of the score.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#UFRGS:GeoCoreOntology_generically_depends_on</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a g-dependent continuant b g-depends on an independent continuant c at t means: there inheres in c an s-dependent continuant which concretizes b at t</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
-        <IRI>#UFRGS:GeoCoreOntology_generically_depends_on</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This relation was defined in the BFO 2020 text. We added it in the GeoCore Ontology because the RO ontology didn&apos;t add it yet.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>#UFRGS:GeoCoreOntology_generically_depends_on</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">g-depends on</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#UFRGS:GeoCoreOntology_generically_depends_on</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">BFO 2020</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#UFRGS:GeoCoreOntology_generically_depends_on</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">generically depends on</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
