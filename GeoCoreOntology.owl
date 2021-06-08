@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology"
-     versionIRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology/bfo2020">
+     versionIRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology/2020">
     <Prefix name="" IRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -27,55 +27,28 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Mara Abel</Literal>
     </Annotation>
     <Declaration>
-        <ObjectProperty IRI="#UFRGS:GeoCoreOntology_constituted_by"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#UFRGS:GeoCoreOntology_age_of"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#UFRGS:GeoCoreOntology_has_age"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#UFRGS:GeoCoreOntology_geological_boundary"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#UFRGS:GeoCoreOntology_geological_process"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#axiom"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#UFRGS:GeoCoreOntology_unconsolidated_earth_material"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#UFRGS:GeoCoreOntology_geological_structure"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
     </Declaration>
     <Declaration>
         <Class IRI="#UFRGS:GeoCoreOntology_geological_time_interval"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generated_by"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generated_in"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#UFRGS:GeoCoreOntology_rock"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#type"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#UFRGS:GeoCoreOntology_geological_age"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#UFRGS:GeoCoreOntology_mineral"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#UFRGS:GeoCoreOntology_earth_fluid"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#testCase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UFRGS:GeoCoreOntology_geological_age"/>
     </Declaration>
     <Declaration>
         <Class IRI="#UFRGS:GeoCoreOntology_geological_contact"/>
@@ -84,25 +57,52 @@
         <Class IRI="#UFRGS:GeoCoreOntology_earth_material"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#UFRGS:GeoCoreOntology_geological_object"/>
+        <ObjectProperty IRI="#UFRGS:GeoCoreOntology_constituted_by"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <Class IRI="#UFRGS:GeoCoreOntology_geological_boundary"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <Class IRI="#UFRGS:GeoCoreOntology_unconsolidated_earth_material"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UFRGS:GeoCoreOntology_geological_structure"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#axiom"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generated_by"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#scopeNote"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+        <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generated_in"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UFRGS:GeoCoreOntology_rock"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UFRGS:GeoCoreOntology_mineral"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UFRGS:GeoCoreOntology_earth_fluid"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UFRGS:GeoCoreOntology_geological_object"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#UFRGS:GeoCoreOntology_earth_fluid"/>
@@ -652,43 +652,43 @@ Amounts of rock, like other earth materials, are independent rigid entities that
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#axiom"/>
-        <AnonymousIndividual nodeID="_:genid364"/>
+        <AnonymousIndividual nodeID="_:genid455"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GeoCoreOntology_earth_material SubClassOf GeoCoreOntology_generated_by some GeoCoreOntology_geological_process</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#type"/>
-        <AnonymousIndividual nodeID="_:genid364"/>
+        <AnonymousIndividual nodeID="_:genid455"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#axiom"/>
-        <AnonymousIndividual nodeID="_:genid365"/>
+        <AnonymousIndividual nodeID="_:genid456"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GeoCoreOntology_geological_object SubClassOf GeoCoreOntology_constituted_by some 
 (GeoCoreOntology_earth_material and (not (GeoCoreOntology_earth_fluid)))</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#type"/>
-        <AnonymousIndividual nodeID="_:genid365"/>
+        <AnonymousIndividual nodeID="_:genid456"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#axiom"/>
-        <AnonymousIndividual nodeID="_:genid366"/>
+        <AnonymousIndividual nodeID="_:genid457"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GeoCoreOntology_geological_object SubClassOf GeoCoreOntology_generated_by some GeoCoreOntology_geological_process</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#type"/>
-        <AnonymousIndividual nodeID="_:genid366"/>
+        <AnonymousIndividual nodeID="_:genid457"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#axiom"/>
-        <AnonymousIndividual nodeID="_:genid367"/>
+        <AnonymousIndividual nodeID="_:genid458"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GeoCoreOntology_constituted_by Range BFO_0000027</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#type"/>
-        <AnonymousIndividual nodeID="_:genid367"/>
+        <AnonymousIndividual nodeID="_:genid458"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </AnnotationAssertion>
     <SubAnnotationPropertyOf>
