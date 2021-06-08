@@ -138,10 +138,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UFRGS:GeoCoreOntology_geological_boundary"/>
-        <ObjectSomeValuesFrom>
+        <ObjectAllValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000082"/>
             <Class IRI="#UFRGS:GeoCoreOntology_geological_object"/>
-        </ObjectSomeValuesFrom>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UFRGS:GeoCoreOntology_geological_contact"/>
@@ -231,10 +231,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UFRGS:GeoCoreOntology_geological_structure"/>
-        <ObjectSomeValuesFrom>
+        <ObjectAllValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000084"/>
             <Class IRI="#UFRGS:GeoCoreOntology_geological_object"/>
-        </ObjectSomeValuesFrom>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UFRGS:GeoCoreOntology_geological_time_interval"/>
