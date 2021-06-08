@@ -114,10 +114,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UFRGS:GeoCoreOntology_earth_material"/>
-        <ObjectSomeValuesFrom>
+        <ObjectAllValuesFrom>
             <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generated_by"/>
             <Class IRI="#UFRGS:GeoCoreOntology_geological_process"/>
-        </ObjectSomeValuesFrom>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UFRGS:GeoCoreOntology_geological_age"/>
@@ -173,17 +173,17 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UFRGS:GeoCoreOntology_geological_object"/>
-        <ObjectSomeValuesFrom>
+        <ObjectAllValuesFrom>
             <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generated_by"/>
             <Class IRI="#UFRGS:GeoCoreOntology_geological_process"/>
-        </ObjectSomeValuesFrom>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UFRGS:GeoCoreOntology_geological_object"/>
-        <ObjectSomeValuesFrom>
+        <ObjectAllValuesFrom>
             <ObjectProperty IRI="#UFRGS:GeoCoreOntology_has_age"/>
             <Class IRI="#UFRGS:GeoCoreOntology_geological_age"/>
-        </ObjectSomeValuesFrom>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UFRGS:GeoCoreOntology_geological_process"/>
