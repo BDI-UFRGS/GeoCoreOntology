@@ -84,10 +84,10 @@
         <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generated_in"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#UFRGS:GeoCoreOntology_rock"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <Class IRI="#UFRGS:GeoCoreOntology_rock"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#type"/>
@@ -99,10 +99,10 @@
         <Class IRI="#UFRGS:GeoCoreOntology_earth_fluid"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <Class IRI="#UFRGS:GeoCoreOntology_geological_object"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#UFRGS:GeoCoreOntology_geological_object"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#UFRGS:GeoCoreOntology_earth_fluid"/>
@@ -652,43 +652,43 @@ Amounts of rock, like other earth materials, are independent rigid entities that
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#axiom"/>
-        <AnonymousIndividual nodeID="_:genid455"/>
+        <AnonymousIndividual nodeID="_:genid228"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GeoCoreOntology_earth_material SubClassOf GeoCoreOntology_generated_by some GeoCoreOntology_geological_process</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#type"/>
-        <AnonymousIndividual nodeID="_:genid455"/>
+        <AnonymousIndividual nodeID="_:genid228"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#axiom"/>
-        <AnonymousIndividual nodeID="_:genid456"/>
+        <AnonymousIndividual nodeID="_:genid229"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GeoCoreOntology_geological_object SubClassOf GeoCoreOntology_constituted_by some 
 (GeoCoreOntology_earth_material and (not (GeoCoreOntology_earth_fluid)))</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#type"/>
-        <AnonymousIndividual nodeID="_:genid456"/>
+        <AnonymousIndividual nodeID="_:genid229"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#axiom"/>
-        <AnonymousIndividual nodeID="_:genid457"/>
+        <AnonymousIndividual nodeID="_:genid230"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GeoCoreOntology_geological_object SubClassOf GeoCoreOntology_generated_by some GeoCoreOntology_geological_process</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#type"/>
-        <AnonymousIndividual nodeID="_:genid457"/>
+        <AnonymousIndividual nodeID="_:genid230"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#axiom"/>
-        <AnonymousIndividual nodeID="_:genid458"/>
+        <AnonymousIndividual nodeID="_:genid231"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GeoCoreOntology_constituted_by Range BFO_0000027</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#type"/>
-        <AnonymousIndividual nodeID="_:genid458"/>
+        <AnonymousIndividual nodeID="_:genid231"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </AnnotationAssertion>
     <SubAnnotationPropertyOf>
