@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl" uri="bfo-2020.owl"/>
+    <uri id="User Entered Import Resolution" name="https://www.inf.ufrgs.br/bdi/ontologies/v2/geologicalspatialrelationsontology/" uri="GeologicalSpatialRelationsOntology.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1623186022466" name="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology" uri="GeoCoreOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1623186022466" name="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology" uri="GeologicalSpatialRelationsOntology.owl"/>
+    </group>
+</catalog>
