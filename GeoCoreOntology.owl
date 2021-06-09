@@ -85,10 +85,10 @@
         <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generated_in"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <Class IRI="#UFRGS:GeoCoreOntology_rock"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#UFRGS:GeoCoreOntology_rock"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#type"/>
@@ -320,6 +320,17 @@
     <IrreflexiveObjectProperty>
         <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generated_by"/>
     </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generated_by"/>
+        <ObjectUnionOf>
+            <Class IRI="#UFRGS:GeoCoreOntology_earth_material"/>
+            <Class IRI="#UFRGS:GeoCoreOntology_geological_object"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generated_by"/>
+        <Class IRI="#UFRGS:GeoCoreOntology_geological_process"/>
+    </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
         <IRI>#UFRGS:GeoCoreOntology_age_of</IRI>
