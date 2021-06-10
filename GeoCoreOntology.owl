@@ -294,12 +294,23 @@
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000004"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generated_by"/>
+        <ObjectUnionOf>
+            <Class IRI="#UFRGS:GeoCoreOntology_earth_material"/>
+            <Class IRI="#UFRGS:GeoCoreOntology_geological_object"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generically_depends_on"/>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000031"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#UFRGS:GeoCoreOntology_carrier_of"/>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generated_by"/>
+        <Class IRI="#UFRGS:GeoCoreOntology_geological_process"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#UFRGS:GeoCoreOntology_generically_depends_on"/>
