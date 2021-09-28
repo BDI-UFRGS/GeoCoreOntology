@@ -127,6 +127,13 @@
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000140"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#UFRGS:GeoCoreOntology_geological_boundary"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_proper_spatial_part_of"/>
+            <Class IRI="#UFRGS:GeoCoreOntology_geological_object"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#UFRGS:GeoCoreOntology_geological_contact"/>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000145"/>
     </SubClassOf>
@@ -710,43 +717,43 @@ Amounts of rock, like other earth materials, are independent rigid entities that
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#axiom"/>
-        <AnonymousIndividual nodeID="_:genid137"/>
+        <AnonymousIndividual nodeID="_:genid165"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GeoCoreOntology_earth_material SubClassOf GeoCoreOntology_generated_by some GeoCoreOntology_geological_process</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#type"/>
-        <AnonymousIndividual nodeID="_:genid137"/>
+        <AnonymousIndividual nodeID="_:genid165"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#axiom"/>
-        <AnonymousIndividual nodeID="_:genid138"/>
+        <AnonymousIndividual nodeID="_:genid166"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GeoCoreOntology_geological_object SubClassOf GeoCoreOntology_constituted_by some 
 (GeoCoreOntology_earth_material and (not (GeoCoreOntology_earth_fluid)))</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#type"/>
-        <AnonymousIndividual nodeID="_:genid138"/>
+        <AnonymousIndividual nodeID="_:genid166"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#axiom"/>
-        <AnonymousIndividual nodeID="_:genid139"/>
+        <AnonymousIndividual nodeID="_:genid167"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GeoCoreOntology_geological_object SubClassOf GeoCoreOntology_generated_by some GeoCoreOntology_geological_process</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#type"/>
-        <AnonymousIndividual nodeID="_:genid139"/>
+        <AnonymousIndividual nodeID="_:genid167"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#axiom"/>
-        <AnonymousIndividual nodeID="_:genid140"/>
+        <AnonymousIndividual nodeID="_:genid168"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GeoCoreOntology_constituted_by Range BFO_0000027</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#type"/>
-        <AnonymousIndividual nodeID="_:genid140"/>
+        <AnonymousIndividual nodeID="_:genid168"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </AnnotationAssertion>
     <SubAnnotationPropertyOf>
