@@ -17,7 +17,7 @@ https://doi.org/10.1016/j.cageo.2019.104387
 
 The latest version of the ontology can always be found at:
 
-http://purl.obolibrary.org/obo/geocore.owl
+https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl
 
 (note this will not show up until the request has been approved by obofoundry.org)
 
