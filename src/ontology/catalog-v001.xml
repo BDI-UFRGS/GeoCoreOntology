@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/geocore/releases/2024-04-04/imports/BFO2020_import.owl" uri="imports/BFO2020_import.owl"/>
+    <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
+        <uri name="http://purl.obolibrary.org/obo/geocore/imports/BFO2020_import.owl" uri="imports/BFO2020_import.owl"/>
+    </group>
+</catalog>

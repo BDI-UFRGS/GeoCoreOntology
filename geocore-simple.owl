@@ -1,0 +1,258 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/geocore/geocore-simple.owl#"
+     xml:base="http://purl.obolibrary.org/obo/geocore/geocore-simple.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ontodebug="http://ainf.aau.at/ontodebug#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/geocore/geocore-simple.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/geocore/releases/2024-04-04/geocore-simple.owl"/>
+        <dc:contributor xml:lang="en">Mara Abel</dc:contributor>
+        <dc:contributor xml:lang="en">Michel Perrin</dc:contributor>
+        <dc:contributor>Fernando Cicconeto</dc:contributor>
+        <dc:contributor>Joel Luis Carbonera</dc:contributor>
+        <dc:contributor>Luan Fonseca Garcia</dc:contributor>
+        <dc:contributor>Lucas Valadares Vieira</dc:contributor>
+        <dc:contributor>Mara Abel</dc:contributor>
+        <dc:contributor>Renata dos Santos Alvarenga</dc:contributor>
+        <owl:versionInfo>2024-04-04</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ainf.aau.at/ontodebug#axiom -->
+
+    <owl:AnnotationProperty rdf:about="http://ainf.aau.at/ontodebug#axiom">
+        <rdfs:subPropertyOf rdf:resource="http://ainf.aau.at/ontodebug#testCase"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://ainf.aau.at/ontodebug#testCase -->
+
+    <owl:AnnotationProperty rdf:about="http://ainf.aau.at/ontodebug#testCase"/>
+    
+
+
+    <!-- http://ainf.aau.at/ontodebug#type -->
+
+    <owl:AnnotationProperty rdf:about="http://ainf.aau.at/ontodebug#type">
+        <rdfs:subPropertyOf rdf:resource="http://ainf.aau.at/ontodebug#testCase"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000056"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000080 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000080"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000086 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000086"/>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl#UFRGS:GeoCoreOntology_age_of -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl#UFRGS:GeoCoreOntology_age_of">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+        <owl:inverseOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl#UFRGS:GeoCoreOntology_has_age"/>
+        <obo:IAO_0000115 xml:lang="en">The relation between a Geological Age and a Geological Object. Inverse of has age relation.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">age of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl#UFRGS:GeoCoreOntology_carrier_of -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl#UFRGS:GeoCoreOntology_carrier_of">
+        <owl:inverseOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl#UFRGS:GeoCoreOntology_generically_depends_on"/>
+        <obo:IAO_0000112 xml:lang="en">Molecules of DNA are carriers of genetic information</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">This copy of War and Peace is carrier of the novel written by Tolstoy</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">This hard drive is carrier of these data items</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">The relation between an independent continuant that is not a spatial region and is the carrier of some g-dependent continuant</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This relation was defined in the BFO 2020 text. We added it in the GeoCore Ontology because the RO ontology didn&apos;t add it yet.</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">BFO 2020</obo:IAO_0000119>
+        <rdfs:label>carrier of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl#UFRGS:GeoCoreOntology_constituted_by -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl#UFRGS:GeoCoreOntology_constituted_by">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <obo:IAO_0000115>The relation between some material entity and the material that it is made of.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This is a material constitution relation intended to represent the relationship between material objects, such as geological objects and earth materials, or aggregates of them.</obo:IAO_0000116>
+        <obo:IAO_0000119>Evnine, S. J. (2011). Constitution and composition: Three approaches to their relation. ProtoSociology, 27, 212-235.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">constituted by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl#UFRGS:GeoCoreOntology_generated_by -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl#UFRGS:GeoCoreOntology_generated_by">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <obo:IAO_0000115 xml:lang="en">A relation between an &apos;earth material&apos; or &apos;geological object&apos;, and a process, in which the continuant was generated by the process</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">When a geological process creates a new geological object or earth material, we
+say that it generated this new geological object or earth material. Thus, every instance of earth material and geological object have a unique generation relation with one instance of geological process.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">generated by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl#UFRGS:GeoCoreOntology_generated_in -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl#UFRGS:GeoCoreOntology_generated_in">
+        <obo:IAO_0000115 xml:lang="en">The Geological Time Interval in which the object was generated.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">generated in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl#UFRGS:GeoCoreOntology_generically_depends_on -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl#UFRGS:GeoCoreOntology_generically_depends_on">
+        <obo:IAO_0000112 xml:lang="en">The pattern shared by chess boards g-depends on any chess board.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">The score of a symphony g-depends on a copy of the score.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a g-dependent continuant b g-depends on an independent continuant c at t means: there inheres in c an s-dependent continuant which concretizes b at t</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This relation was defined in the BFO 2020 text. We added it in the GeoCore Ontology because the RO ontology didn&apos;t add it yet.</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">g-depends on</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">BFO 2020</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">generically depends on</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl#UFRGS:GeoCoreOntology_has_age -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl#UFRGS:GeoCoreOntology_has_age">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+        <obo:IAO_0000115 xml:lang="en">The relation between a Geological Object and its Geological Age.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has age</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_above -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_above">
+        <owl:inverseOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_below"/>
+        <obo:IAO_0000115 xml:lang="en">A spatial relation between two Independent Continuants (BFO), x and y, in which x has a location greater than the location of y in the vertical axis corresponding to the same frame of reference. It is the inverse relation of Below.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">above</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_behind -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_behind">
+        <obo:IAO_0000115 xml:lang="en">A spatial relation between two Independent Continuants(BFO), x and y, in which y has a location that makes it nearer than x in the longitudinal axis corresponding to the same frame of reference. It is the inverse relation of In Front Of.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">behind</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_below -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_below">
+        <obo:IAO_0000115 xml:lang="en">A spatial relation between two Independent Continuants (BFO), x and y, in which x has a location lower than the location of y in the vertical axis corresponding to the same frame of reference. It is the inverse relation of Above.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">below</rdfs:label>
+    </owl:ObjectProperty>
+    <rdf:Description>
+        <ontodebug:axiom>GeoCoreOntology_constituted_by Range BFO_0000027</ontodebug:axiom>
+        <ontodebug:type rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ontodebug:type>
+    </rdf:Description>
+    <rdf:Description>
+        <ontodebug:axiom>GeoCoreOntology_geological_object SubClassOf GeoCoreOntology_constituted_by some 
+(GeoCoreOntology_earth_material and (not (GeoCoreOntology_earth_fluid)))</ontodebug:axiom>
+        <ontodebug:type rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ontodebug:type>
+    </rdf:Description>
+    <rdf:Description>
+        <ontodebug:axiom>GeoCoreOntology_earth_material SubClassOf GeoCoreOntology_generated_by some GeoCoreOntology_geological_process</ontodebug:axiom>
+        <ontodebug:type rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ontodebug:type>
+    </rdf:Description>
+    <rdf:Description>
+        <ontodebug:axiom>GeoCoreOntology_geological_object SubClassOf GeoCoreOntology_generated_by some GeoCoreOntology_geological_process</ontodebug:axiom>
+        <ontodebug:type rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ontodebug:type>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
+

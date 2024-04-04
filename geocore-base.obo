@@ -1,0 +1,14 @@
+format-version: 1.2
+data-version: geocore/releases/2024-04-04/geocore-base.owl
+ontology: geocore/geocore-base
+property_value: http://purl.org/dc/elements/1.1/contributor "Fernando Cicconeto" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Joel Luis Carbonera" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Luan Fonseca Garcia" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Lucas Valadares Vieira" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Mara Abel" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Mara Abel" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Michel Perrin" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Renata dos Santos Alvarenga" xsd:string
+property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
+property_value: owl:versionInfo "2024-04-04" xsd:string
+
