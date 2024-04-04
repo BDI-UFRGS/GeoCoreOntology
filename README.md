@@ -2,9 +2,14 @@
 ![Build Status](https://github.com/BDI-UFRGS/geocoreontology/actions/workflows/qc.yml/badge.svg)
 # GeoCore Ontology
 
-Description: None
+GeoCore Ontology is a core ontology for general use in Geology. It contains a limited set of concepts that are shared among various subdomains of Geology. Having a common core set of concepts is key in order to integrate and develop knowledge bases in the domain.
 
-More information can be found at http://obofoundry.org/ontology/geocore
+GeoCore is a collaborative effort between the Informatics Institute at UFRGS (Brazil) and Geosiris Company (France).
+
+For more details check the original publication at https://doi.org/10.1016/j.cageo.2019.104387
+
+## Cite
+https://doi.org/10.1016/j.cageo.2019.104387
 
 ## Versions
 
