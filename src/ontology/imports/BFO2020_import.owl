@@ -32,6 +32,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000140>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000141>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000145>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000146>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000056>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000057>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000084>))
@@ -318,6 +319,14 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000145> "rel
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000145> "b is a relational quality =Def b is a quality & there exists c and d such that c and d are not identical & b specifically depends on c & b specifically depends on d"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000145> "A marriage bond; an instance of love; an obligation between one person and another"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000145> <http://purl.obolibrary.org/obo/BFO_0000019>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000146> (fiat surface)
+
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/identifier> <http://purl.obolibrary.org/obo/BFO_0000146> "033-BFO")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000146> "fiat surface"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000146> "(Elucidation) A fiat surface is a two-dimensional continuant fiat boundary that is self-connected"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000146> "The surface of the Earth; the plane separating the smoking from the non-smoking zone in a restaurant"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000146> <http://purl.obolibrary.org/obo/BFO_0000140>)
 
 
 DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000031>)

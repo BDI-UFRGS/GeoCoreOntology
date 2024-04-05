@@ -45,6 +45,22 @@
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
         <Literal>Renata dos Santos Alvarenga</Literal>
     </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <Literal>GeoCore Ontology is a core ontology for general use in Geology. It contains a limited set of concepts that are shared among various subdomains of Geology. Having a common core set of concepts is key in order to integrate and develop knowledge bases in the domain.
+
+GeoCore is a collaborative effort between the Informatics Institute at UFRGS (Brazil) and Geosiris Company (France).
+
+For more details check the original publication at https://doi.org/10.1016/j.cageo.2019.104387</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
+        <Literal>https://creativecommons.org/licenses/by-nc/4.0/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal>GeoCore Ontology</Literal>
+    </Annotation>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000004"/>
     </Declaration>
@@ -79,7 +95,7 @@
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000145"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://inf.ufrgs.br/bdi/ontologies/GEOCORE_0000001"/>
+        <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000001"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000002"/>
@@ -130,15 +146,6 @@
         <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000017"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#axiom"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#testCase"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#type"/>
-    </Declaration>
-    <Declaration>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
     </Declaration>
     <Declaration>
@@ -157,18 +164,18 @@
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="https://inf.ufrgs.br/bdi/ontologies/GEOCORE_0000001"/>
+        <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000001"/>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://inf.ufrgs.br/bdi/ontologies/GEOCORE_0000001"/>
+        <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000001"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000015"/>
             <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000003"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://inf.ufrgs.br/bdi/ontologies/GEOCORE_0000001"/>
+        <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000001"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000017"/>
             <ObjectIntersectionOf>
@@ -180,7 +187,7 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://inf.ufrgs.br/bdi/ontologies/GEOCORE_0000001"/>
+        <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000001"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000013"/>
             <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000002"/>
@@ -202,7 +209,7 @@
         <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000004"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000084"/>
-            <Class IRI="https://inf.ufrgs.br/bdi/ontologies/GEOCORE_0000001"/>
+            <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000001"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -212,6 +219,13 @@
     <SubClassOf>
         <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000006"/>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000006"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000015"/>
+            <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000003"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000006"/>
@@ -238,12 +252,23 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000011"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000140"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000146"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000012"/>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000145"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000012"/>
+        <ObjectExactCardinality cardinality="2">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000197"/>
+            <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000001"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000001"/>
+        <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000006"/>
+    </DisjointClasses>
     <DisjointClasses>
         <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000007"/>
         <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000008"/>
@@ -294,7 +319,7 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000013"/>
         <ObjectUnionOf>
-            <Class IRI="https://inf.ufrgs.br/bdi/ontologies/GEOCORE_0000001"/>
+            <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000001"/>
             <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000006"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
@@ -304,23 +329,23 @@
     </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>https://inf.ufrgs.br/bdi/ontologies/GEOCORE_0000001</IRI>
+        <IRI>https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000001</IRI>
         <Literal xml:lang="en">An object that is &apos;generated by&apos; some &apos;geological process&apos; and has at least one part &apos;constituted by&apos; some &apos;earth material&apos; that is not an &apos;earth fluid&apos;.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
-        <IRI>https://inf.ufrgs.br/bdi/ontologies/GEOCORE_0000001</IRI>
+        <IRI>https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000001</IRI>
         <Literal xml:lang="en">A geological object is a naturally occurring entity because a geological process
 generates it, and some earth material constitutes it. Thus, we can differentiate geological objects from artificial objects, such as a well-core, because even though some earth material constitutes artificial objects, they are human-made rather than generated by some geological process. Furthermore, Geological Objects are specializations of BFO Objects, meaning they must necessarily have some unity criteria. The unity is what differentiates geological objects from Earth Materials.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://inf.ufrgs.br/bdi/ontologies/GEOCORE_0000001</IRI>
+        <IRI>https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000001</IRI>
         <Literal xml:lang="en">geological object</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://inf.ufrgs.br/bdi/ontologies/GEOCORE_0000001</IRI>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000001</IRI>
         <Literal xml:lang="pt">objeto geológico</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -344,7 +369,7 @@ generates it, and some earth material constitutes it. Thus, we can differentiate
         <Literal xml:lang="en">geological process</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
         <IRI>https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000002</IRI>
         <Literal xml:lang="pt">processo geológico</Literal>
     </AnnotationAssertion>
@@ -359,7 +384,7 @@ generates it, and some earth material constitutes it. Thus, we can differentiate
         <Literal xml:lang="en">geological age</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
         <IRI>https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000003</IRI>
         <Literal xml:lang="pt">idade geológica</Literal>
     </AnnotationAssertion>
@@ -377,12 +402,12 @@ objects. The pattern comprises the material configuration and the mutual relatio
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000004</IRI>
-        <Literal xml:lang="pt">estrutura geológica</Literal>
+        <Literal xml:lang="en">geological structure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
         <IRI>https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000004</IRI>
-        <Literal xml:lang="en">geological structure</Literal>
+        <Literal xml:lang="pt">estrutura geológica</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -395,7 +420,7 @@ objects. The pattern comprises the material configuration and the mutual relatio
         <Literal xml:lang="en">geological time interval</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
         <IRI>https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000005</IRI>
         <Literal xml:lang="pt">intervalo de tempo geológico</Literal>
     </AnnotationAssertion>
@@ -421,7 +446,7 @@ natural gas.</Literal>
         <Literal xml:lang="en">earth material</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
         <IRI>https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000006</IRI>
         <Literal xml:lang="pt">material geologico</Literal>
     </AnnotationAssertion>
@@ -446,7 +471,7 @@ natural gas.</Literal>
         <Literal xml:lang="en">amount of mineral</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
         <IRI>https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000007</IRI>
         <Literal xml:lang="pt">quantidade de mineral</Literal>
     </AnnotationAssertion>
@@ -473,7 +498,7 @@ Amounts of rock, like other earth materials, are independent rigid entities that
         <Literal xml:lang="en">amount of rock</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
         <IRI>https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000008</IRI>
         <Literal xml:lang="pt">quantidade de rocha</Literal>
     </AnnotationAssertion>
@@ -493,7 +518,7 @@ Amounts of rock, like other earth materials, are independent rigid entities that
         <Literal xml:lang="en">earth fluid</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
         <IRI>https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009</IRI>
         <Literal xml:lang="pt">fluido da terra</Literal>
     </AnnotationAssertion>
@@ -505,12 +530,12 @@ Amounts of rock, like other earth materials, are independent rigid entities that
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000010</IRI>
-        <Literal xml:lang="pt">material geológico inconsolidado</Literal>
+        <Literal xml:lang="en">unconsolidated earth material</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
         <IRI>https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000010</IRI>
-        <Literal xml:lang="en">unconsolidated earth material</Literal>
+        <Literal xml:lang="pt">material geológico inconsolidado</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -528,7 +553,7 @@ Amounts of rock, like other earth materials, are independent rigid entities that
         <Literal xml:lang="en">geological boundary</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
         <IRI>https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000011</IRI>
         <Literal xml:lang="pt">limite geológico</Literal>
     </AnnotationAssertion>
@@ -544,21 +569,14 @@ Amounts of rock, like other earth materials, are independent rigid entities that
 connected with, i.e., their external boundaries are physically adjacent. Objects that are in contact do not have any kind of proper parthood relationship between them.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000012</IRI>
-        <Literal xml:lang="en">There was some problem with the axiom asserting that the contanct depends on two different objects.
-
-We have to check it better.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000012</IRI>
-        <Literal xml:lang="pt">contato geológico</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000012</IRI>
         <Literal xml:lang="en">geological contact</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000012</IRI>
+        <Literal xml:lang="pt">contato geológico</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -626,55 +644,6 @@ say that it generated this new geological object or earth material. Thus, every 
         <IRI>https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000017</IRI>
         <Literal xml:lang="en">constituted by</Literal>
     </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#axiom"/>
-        <AnonymousIndividual nodeID="_:genid2147483648"/>
-        <Literal>GeoCoreOntology_earth_material SubClassOf GeoCoreOntology_generated_by some GeoCoreOntology_geological_process</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#type"/>
-        <AnonymousIndividual nodeID="_:genid2147483648"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#axiom"/>
-        <AnonymousIndividual nodeID="_:genid2147483649"/>
-        <Literal>GeoCoreOntology_geological_object SubClassOf GeoCoreOntology_constituted_by some 
-(GeoCoreOntology_earth_material and (not (GeoCoreOntology_earth_fluid)))</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#type"/>
-        <AnonymousIndividual nodeID="_:genid2147483649"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#axiom"/>
-        <AnonymousIndividual nodeID="_:genid2147483650"/>
-        <Literal>GeoCoreOntology_geological_object SubClassOf GeoCoreOntology_generated_by some GeoCoreOntology_geological_process</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#type"/>
-        <AnonymousIndividual nodeID="_:genid2147483650"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#axiom"/>
-        <AnonymousIndividual nodeID="_:genid2147483651"/>
-        <Literal>GeoCoreOntology_constituted_by Range BFO_0000027</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#type"/>
-        <AnonymousIndividual nodeID="_:genid2147483651"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-    </AnnotationAssertion>
-    <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#axiom"/>
-        <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#testCase"/>
-    </SubAnnotationPropertyOf>
-    <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#type"/>
-        <AnnotationProperty IRI="http://ainf.aau.at/ontodebug#testCase"/>
-    </SubAnnotationPropertyOf>
 </Ontology>
 
 

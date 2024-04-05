@@ -9,7 +9,10 @@ release_artefacts:
   - full
   - simple
 primary_release: full
+ci:
+  - github_actions
 import_group:
   products:
     - id: bfo2020
       mirror_from: http://purl.obolibrary.org/obo/bfo/2020/bfo-core.owl
+  

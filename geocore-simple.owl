@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/geocore/geocore-simple.owl#"
-     xml:base="http://purl.obolibrary.org/obo/geocore/geocore-simple.owl"
+<rdf:RDF xmlns="https:/www.inf.ufrgs.br/bdi/ontologies/geocore-simple.owl#"
+     xml:base="https:/www.inf.ufrgs.br/bdi/ontologies/geocore-simple.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -8,9 +8,10 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:ontodebug="http://ainf.aau.at/ontodebug#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/geocore/geocore-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/geocore/releases/2024-04-04/geocore-simple.owl"/>
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https:/www.inf.ufrgs.br/bdi/ontologies/geocore-simple.owl">
+        <owl:versionIRI rdf:resource="https:/www.inf.ufrgs.br/bdi/ontologies/releases/2024-04-05/geocore-simple.owl"/>
         <dc:contributor xml:lang="en">Mara Abel</dc:contributor>
         <dc:contributor xml:lang="en">Michel Perrin</dc:contributor>
         <dc:contributor>Fernando Cicconeto</dc:contributor>
@@ -19,7 +20,14 @@
         <dc:contributor>Lucas Valadares Vieira</dc:contributor>
         <dc:contributor>Mara Abel</dc:contributor>
         <dc:contributor>Renata dos Santos Alvarenga</dc:contributor>
-        <owl:versionInfo>2024-04-04</owl:versionInfo>
+        <terms:description>GeoCore Ontology is a core ontology for general use in Geology. It contains a limited set of concepts that are shared among various subdomains of Geology. Having a common core set of concepts is key in order to integrate and develop knowledge bases in the domain.
+
+GeoCore is a collaborative effort between the Informatics Institute at UFRGS (Brazil) and Geosiris Company (France).
+
+For more details check the original publication at https://doi.org/10.1016/j.cageo.2019.104387</terms:description>
+        <terms:license>https://creativecommons.org/licenses/by-nc/4.0/</terms:license>
+        <terms:title>GeoCore Ontology</terms:title>
+        <owl:versionInfo>2024-04-05</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -32,28 +40,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://ainf.aau.at/ontodebug#axiom -->
-
-    <owl:AnnotationProperty rdf:about="http://ainf.aau.at/ontodebug#axiom">
-        <rdfs:subPropertyOf rdf:resource="http://ainf.aau.at/ontodebug#testCase"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://ainf.aau.at/ontodebug#testCase -->
-
-    <owl:AnnotationProperty rdf:about="http://ainf.aau.at/ontodebug#testCase"/>
-    
-
-
-    <!-- http://ainf.aau.at/ontodebug#type -->
-
-    <owl:AnnotationProperty rdf:about="http://ainf.aau.at/ontodebug#type">
-        <rdfs:subPropertyOf rdf:resource="http://ainf.aau.at/ontodebug#testCase"/>
-    </owl:AnnotationProperty>
     
 
 
@@ -93,6 +79,54 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -104,53 +138,108 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000056 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000056"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000056">
+        <dc:identifier>250-BFO</dc:identifier>
+        <rdfs:label xml:lang="en">participates in</rdfs:label>
+        <skos:definition xml:lang="en">(Elucidation) participates in holds between some b that is either a specifically dependent continuant or generically dependent continuant or independent continuant that is not a spatial region &amp; some process p such that b participates in p some way</skos:definition>
+        <skos:scopeNote xml:lang="en">Users that require more sophisticated representations of time are encouraged to import a temporal extension of BFO-Core provided by the BFO development team. See documentation for guidance: &lt;Link&gt;</skos:scopeNote>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RO_0000080 -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000084 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000080"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000084">
+        <dc:identifier>252-BFO</dc:identifier>
+        <rdfs:label xml:lang="en">generically depends on</rdfs:label>
+        <skos:altLabel xml:lang="en">g-depends on</skos:altLabel>
+        <skos:definition xml:lang="en">b generically depends on c =Def b is a generically dependent continuant &amp; c is an independent continuant that is not a spatial region &amp; at some time t there inheres in c a specifically dependent continuant which concretizes b at t</skos:definition>
+        <skos:scopeNote xml:lang="en">Users that require more sophisticated representations of time are encouraged to import a temporal extension of BFO-Core provided by the BFO development team. See documentation for guidance: &lt;Link&gt;</skos:scopeNote>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RO_0000086 -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000196 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000086"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000196">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000197"/>
+        <dc:identifier>053-BFO</dc:identifier>
+        <rdfs:label xml:lang="en">bearer of</rdfs:label>
+        <skos:definition xml:lang="en">b bearer of c =Def c inheres in b</skos:definition>
+        <skos:example xml:lang="en">A patch of ink is the bearer of a colour quality; an organism is the bearer of a temperature quality</skos:example>
+    </owl:ObjectProperty>
     
 
 
-    <!-- https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl#UFRGS:GeoCoreOntology_age_of -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000197 -->
 
-    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl#UFRGS:GeoCoreOntology_age_of">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-        <owl:inverseOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl#UFRGS:GeoCoreOntology_has_age"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000197">
+        <dc:identifier>051-BFO</dc:identifier>
+        <rdfs:label xml:lang="en">inheres in</rdfs:label>
+        <skos:definition xml:lang="en">b inheres in c =Def b is a specifically dependent continuant &amp; c is an independent continuant that is not a spatial region &amp; b specifically depends on c</skos:definition>
+        <skos:example xml:lang="en">A shape inheres in a shaped object; a mass inheres in a material entity</skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000013 -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000013">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000001"/>
+                    <rdf:Description rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000006"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000002"/>
+        <obo:IAO_0000115 xml:lang="en">A relation between an &apos;earth material&apos; or &apos;geological object&apos;, and a process, in which the continuant was generated by the process</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">When a geological process creates a new geological object or earth material, we
+say that it generated this new geological object or earth material. Thus, every instance of earth material and geological object have a unique generation relation with one instance of geological process.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">generated by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000014 -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000014">
+        <obo:IAO_0000115 xml:lang="en">The Geological Time Interval in which the object was generated.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">generated in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000015 -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000015">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
+        <owl:inverseOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000016"/>
+        <obo:IAO_0000115 xml:lang="en">The relation between a Geological Object and its Geological Age.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has age</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000016 -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000016">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000197"/>
         <obo:IAO_0000115 xml:lang="en">The relation between a Geological Age and a Geological Object. Inverse of has age relation.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">age of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl#UFRGS:GeoCoreOntology_carrier_of -->
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000017 -->
 
-    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl#UFRGS:GeoCoreOntology_carrier_of">
-        <owl:inverseOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl#UFRGS:GeoCoreOntology_generically_depends_on"/>
-        <obo:IAO_0000112 xml:lang="en">Molecules of DNA are carriers of genetic information</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">This copy of War and Peace is carrier of the novel written by Tolstoy</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">This hard drive is carrier of these data items</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">The relation between an independent continuant that is not a spatial region and is the carrier of some g-dependent continuant</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">This relation was defined in the BFO 2020 text. We added it in the GeoCore Ontology because the RO ontology didn&apos;t add it yet.</obo:IAO_0000116>
-        <obo:IAO_0000119 xml:lang="en">BFO 2020</obo:IAO_0000119>
-        <rdfs:label>carrier of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl#UFRGS:GeoCoreOntology_constituted_by -->
-
-    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl#UFRGS:GeoCoreOntology_constituted_by">
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000017">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <obo:IAO_0000115>The relation between some material entity and the material that it is made of.</obo:IAO_0000115>
@@ -161,94 +250,238 @@
     
 
 
-    <!-- https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl#UFRGS:GeoCoreOntology_generated_by -->
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl#UFRGS:GeoCoreOntology_generated_by">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <obo:IAO_0000115 xml:lang="en">A relation between an &apos;earth material&apos; or &apos;geological object&apos;, and a process, in which the continuant was generated by the process</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">When a geological process creates a new geological object or earth material, we
-say that it generated this new geological object or earth material. Thus, every instance of earth material and geological object have a unique generation relation with one instance of geological process.</obo:IAO_0000116>
-        <rdfs:label xml:lang="en">generated by</rdfs:label>
-    </owl:ObjectProperty>
     
 
 
-    <!-- https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl#UFRGS:GeoCoreOntology_generated_in -->
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000001 -->
 
-    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl#UFRGS:GeoCoreOntology_generated_in">
-        <obo:IAO_0000115 xml:lang="en">The Geological Time Interval in which the object was generated.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">generated in</rdfs:label>
-    </owl:ObjectProperty>
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000001">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000015"/>
+                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000017"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000006"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009"/>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000013"/>
+                <owl:allValuesFrom rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000006"/>
+        <obo:IAO_0000115 xml:lang="en">An object that is &apos;generated by&apos; some &apos;geological process&apos; and has at least one part &apos;constituted by&apos; some &apos;earth material&apos; that is not an &apos;earth fluid&apos;.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">A geological object is a naturally occurring entity because a geological process
+generates it, and some earth material constitutes it. Thus, we can differentiate geological objects from artificial objects, such as a well-core, because even though some earth material constitutes artificial objects, they are human-made rather than generated by some geological process. Furthermore, Geological Objects are specializations of BFO Objects, meaning they must necessarily have some unity criteria. The unity is what differentiates geological objects from Earth Materials.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">geological object</rdfs:label>
+        <skos:altLabel xml:lang="pt">objeto geológico</skos:altLabel>
+    </owl:Class>
     
 
 
-    <!-- https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl#UFRGS:GeoCoreOntology_generically_depends_on -->
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000002 -->
 
-    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl#UFRGS:GeoCoreOntology_generically_depends_on">
-        <obo:IAO_0000112 xml:lang="en">The pattern shared by chess boards g-depends on any chess board.</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">The score of a symphony g-depends on a copy of the score.</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">a g-dependent continuant b g-depends on an independent continuant c at t means: there inheres in c an s-dependent continuant which concretizes b at t</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">This relation was defined in the BFO 2020 text. We added it in the GeoCore Ontology because the RO ontology didn&apos;t add it yet.</obo:IAO_0000116>
-        <obo:IAO_0000118 xml:lang="en">g-depends on</obo:IAO_0000118>
-        <obo:IAO_0000119 xml:lang="en">BFO 2020</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">generically depends on</rdfs:label>
-    </owl:ObjectProperty>
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000002">
+        <obo:IAO_0000112 xml:lang="en">Examples are the process of deposition, the process of folding, a tectonic process, a sedimentary process.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">It is a physical, or chemical, or biological, naturally occurring process that occurs on the Earth’s surface or subsurface and occupies some &apos;geological time interval&apos;</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Geological processes are macro processes that generate, transform, deform, transport, or destroy geological objects and earth materials. These processes are not necessarily atomic and may have other geological processes as parts.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">geological process</rdfs:label>
+        <skos:altLabel xml:lang="pt">processo geológico</skos:altLabel>
+    </owl:Class>
     
 
 
-    <!-- https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl#UFRGS:GeoCoreOntology_has_age -->
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000003 -->
 
-    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl#UFRGS:GeoCoreOntology_has_age">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-        <obo:IAO_0000115 xml:lang="en">The relation between a Geological Object and its Geological Age.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">has age</rdfs:label>
-    </owl:ObjectProperty>
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000003">
+        <obo:IAO_0000115 xml:lang="en">It is a quality that &apos;inheres in&apos; a &apos;geological object&apos; or &apos;earth material&apos; that corresponds to the &apos;geological time interval&apos; in which the &apos;geological process&apos; that it was &apos;generated by&apos; occupied.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">geological age</rdfs:label>
+        <skos:altLabel xml:lang="pt">idade geológica</skos:altLabel>
+    </owl:Class>
     
 
 
-    <!-- https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_above -->
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000004 -->
 
-    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_above">
-        <owl:inverseOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_below"/>
-        <obo:IAO_0000115 xml:lang="en">A spatial relation between two Independent Continuants (BFO), x and y, in which x has a location greater than the location of y in the vertical axis corresponding to the same frame of reference. It is the inverse relation of Below.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">above</rdfs:label>
-    </owl:ObjectProperty>
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000004">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000084"/>
+                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">It is a &apos;generically dependent continuant&apos; that is the pattern of a non-atomic &apos;geological object&apos;&apos;s internal arrangement.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Geological structures are general material patterns repeated in many geological
+objects. The pattern comprises the material configuration and the mutual relationships of the object’s different parts. Structures result from one or a series of geological processes that generated or transformed the geological object they generically depend on. Thus, there is some historical dependence relation between the structure and this geological process, but what concretizes the structure is some complex quality inhering in the object, not the process.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">geological structure</rdfs:label>
+        <skos:altLabel xml:lang="pt">estrutura geológica</skos:altLabel>
+    </owl:Class>
     
 
 
-    <!-- https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_behind -->
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000005 -->
 
-    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_behind">
-        <obo:IAO_0000115 xml:lang="en">A spatial relation between two Independent Continuants(BFO), x and y, in which y has a location that makes it nearer than x in the longitudinal axis corresponding to the same frame of reference. It is the inverse relation of In Front Of.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">behind</rdfs:label>
-    </owl:ObjectProperty>
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000005">
+        <obo:IAO_0000115 xml:lang="en">It is a BFO temporal interval that corresponds to a time interval within the Geological Time Scale.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">geological time interval</rdfs:label>
+        <skos:altLabel xml:lang="pt">intervalo de tempo geológico</skos:altLabel>
+    </owl:Class>
     
 
 
-    <!-- https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_below -->
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000006 -->
 
-    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_below">
-        <obo:IAO_0000115 xml:lang="en">A spatial relation between two Independent Continuants (BFO), x and y, in which x has a location lower than the location of y in the vertical axis corresponding to the same frame of reference. It is the inverse relation of Above.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">below</rdfs:label>
-    </owl:ObjectProperty>
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000006">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000015"/>
+                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000013"/>
+                <owl:allValuesFrom rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">Examples are an amount of sandstone, an amount of petroleum, an amount of
+natural gas.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">It is a natural amount of matter &apos;generated by&apos; some &apos;geological process&apos;.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Earth Materials are natural amounts of matter. Thus, they come into existence by nature, without any artificial aid. Since they are amounts, they don’t hold unity criteria, but they are ontologically rigid and provide an identity criteria. Earth Materials and BFO Objects are disjoint. They are either solid, fluid, or unconsolidated. We usually observe earth materials when constituting other objects, such as an amount of rock constituting a geological unity or an amount of sand constituting a dune.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">earth material</rdfs:label>
+        <skos:altLabel xml:lang="pt">material geologico</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000007 -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000007">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000006"/>
+        <obo:IAO_0000112 xml:lang="en">The amount of quarts that constitutes some grain, the amount of feldspar that is part of an amount of rock.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An amount of rock is an &apos;earth material&apos; that is a naturally occuring, inorganic, solid, homogeneous chemical compound with a crystalline structure.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Amounts of mineral lack a unity criteria as every other &apos;earth material&apos;. We usually observe them when they are constitution objects such as crystals or grains.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">amount of mineral</rdfs:label>
+        <skos:altLabel xml:lang="pt">quantidade de mineral</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000008 -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000008">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000006"/>
+        <owl:disjointWith rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009"/>
+        <obo:IAO_0000112 xml:lang="en">The amount of sandstone that constitutes a lithostratigraphic unit.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An amount of rock is a solid consolidated &apos;earth material&apos; that is &apos;constituted by&apos; an aggregate of particles made of mineral matter or material of biological origin.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Geologists define rocks at a scale of observation where they consider them homogeneous, even though an aggregate of solid particles constitutes it. These particles are usually geological objects, such as grains or crystals, or the rest of dead animals or plants. 
+
+Amounts of rock, like other earth materials, are independent rigid entities that do not hold any unity criteria. We can observe them in nature when they are constituting objects such as geological unities.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">amount of rock</rdfs:label>
+        <skos:altLabel xml:lang="pt">quantidade de rocha</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009 -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000006"/>
+        <obo:IAO_0000115 xml:lang="en">Earth fluid is an &apos;earth material&apos; that is fluild.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Earth fluids can be water, oil, gas or a mixture of those fluids.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">earth fluid</rdfs:label>
+        <skos:altLabel xml:lang="pt">fluido da terra</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000010 -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000010">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000006"/>
+        <obo:IAO_0000115 xml:lang="en">Unconsolidated earth material is an &apos;earth material&apos; that is consituted by an aggregate of solid particles but is not consolidated into a &apos;rock&apos; it self.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">unconsolidated earth material</rdfs:label>
+        <skos:altLabel xml:lang="pt">material geológico inconsolidado</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000011 -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000011">
+        <obo:IAO_0000115 xml:lang="en">It is a fiat surface that is &apos;located in&apos; the external surface of a &apos;geological object&apos;.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">The &apos;geological boundary&apos; of a &apos;geological object&apos; coincides with the complete physical discontinuity that delimits it.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">geological boundary</rdfs:label>
+        <skos:altLabel xml:lang="pt">limite geológico</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000012 -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000012">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000197"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">It is a &apos;relational quality&apos; that &apos;inheres in&apos; two distinct &apos;geological object&apos; that are &apos;externally connected with&apos;</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">A geological contact exists when two distinct geological objects are externally
+connected with, i.e., their external boundaries are physically adjacent. Objects that are in contact do not have any kind of proper parthood relationship between them.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">geological contact</rdfs:label>
+        <skos:altLabel xml:lang="pt">contato geológico</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
     <rdf:Description>
-        <ontodebug:axiom>GeoCoreOntology_constituted_by Range BFO_0000027</ontodebug:axiom>
-        <ontodebug:type rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ontodebug:type>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000007"/>
+            <rdf:Description rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000008"/>
+            <rdf:Description rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009"/>
+        </owl:members>
     </rdf:Description>
     <rdf:Description>
-        <ontodebug:axiom>GeoCoreOntology_geological_object SubClassOf GeoCoreOntology_constituted_by some 
-(GeoCoreOntology_earth_material and (not (GeoCoreOntology_earth_fluid)))</ontodebug:axiom>
-        <ontodebug:type rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ontodebug:type>
-    </rdf:Description>
-    <rdf:Description>
-        <ontodebug:axiom>GeoCoreOntology_earth_material SubClassOf GeoCoreOntology_generated_by some GeoCoreOntology_geological_process</ontodebug:axiom>
-        <ontodebug:type rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ontodebug:type>
-    </rdf:Description>
-    <rdf:Description>
-        <ontodebug:axiom>GeoCoreOntology_geological_object SubClassOf GeoCoreOntology_generated_by some GeoCoreOntology_geological_process</ontodebug:axiom>
-        <ontodebug:type rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ontodebug:type>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000007"/>
+            <rdf:Description rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000008"/>
+            <rdf:Description rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009"/>
+            <rdf:Description rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000010"/>
+        </owl:members>
     </rdf:Description>
 </rdf:RDF>
 
