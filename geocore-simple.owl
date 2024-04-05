@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https:/www.inf.ufrgs.br/bdi/ontologies/geocore-simple.owl#"
-     xml:base="https:/www.inf.ufrgs.br/bdi/ontologies/geocore-simple.owl"
+<rdf:RDF xmlns="https://www.inf.ufrgs.br/bdi/ontologies/geocore/geocore-simple.owl#"
+     xml:base="https://www.inf.ufrgs.br/bdi/ontologies/geocore/geocore-simple.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -10,8 +10,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="https:/www.inf.ufrgs.br/bdi/ontologies/geocore-simple.owl">
-        <owl:versionIRI rdf:resource="https:/www.inf.ufrgs.br/bdi/ontologies/releases/2024-04-05/geocore-simple.owl"/>
+    <owl:Ontology rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/geocore/geocore-simple.owl">
+        <owl:versionIRI rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocore/releases/2024-04-05/geocore-simple.owl"/>
         <dc:contributor>Alcides Lopes</dc:contributor>
         <dc:contributor>Fernando Ciconetto</dc:contributor>
         <dc:contributor>Joel Luis Carbonera</dc:contributor>

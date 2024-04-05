@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: https:/www.inf.ufrgs.br/bdi/ontologies/releases/2024-04-05/geocore.owl
+data-version: https://www.inf.ufrgs.br/bdi/ontologies/geocore/releases/2024-04-05/geocore.owl
 ontology: https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl
 property_value: http://purl.org/dc/elements/1.1/contributor "Alcides Lopes" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "Fernando Ciconetto" xsd:string

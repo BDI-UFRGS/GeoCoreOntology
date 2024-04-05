@@ -2,7 +2,7 @@ id: geocore
 title: GeoCore Ontology
 github_org: BDI-UFRGS
 git_main_branch: master
-repo: geocoreontology
+repo: GeoCoreOntology
 uribase: https://www.inf.ufrgs.br/bdi/ontologies
 release_artefacts:
   - base
