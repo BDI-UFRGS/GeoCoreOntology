@@ -3,6 +3,7 @@ title: GeoCore Ontology
 github_org: BDI-UFRGS
 git_main_branch: master
 repo: geocoreontology
+uribase: https://www.inf.ufrgs.br/bdi/ontologies
 release_artefacts:
   - base
   - full
@@ -10,5 +11,5 @@ release_artefacts:
 primary_release: full
 import_group:
   products:
-    - id: BFO2020
+    - id: bfo2020
       mirror_from: http://purl.obolibrary.org/obo/bfo/2020/bfo-core.owl

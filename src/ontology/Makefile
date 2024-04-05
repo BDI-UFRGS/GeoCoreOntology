@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                ab2779380151784c47f9f635959e0da4df8ebd3f395a379146441ca50ad58416
+CONFIG_HASH=                cc4018b5d724ee54d3f47bbf4b428fa976173782227e22e230b3c53751a2f627
 
 
 # ----------------------------------------
@@ -19,9 +19,9 @@ CONFIG_HASH=                ab2779380151784c47f9f635959e0da4df8ebd3f395a37914644
 # these can be overwritten on the command line
 
 OBOBASE=                    http://purl.obolibrary.org/obo
-URIBASE=                    http://purl.obolibrary.org/obo
+URIBASE=                    https://www.inf.ufrgs.br/bdi/ontologies
 ONT=                        geocore
-ONTBASE=                    http://purl.obolibrary.org/obo/geocore
+ONTBASE=                    https://www.inf.ufrgs.br/bdi/ontologies/geocore
 EDIT_FORMAT=                owl
 SRC =                       $(ONT)-edit.$(EDIT_FORMAT)
 MAKE_FAST=                  $(MAKE) IMP=false PAT=false COMP=false MIR=false
@@ -159,7 +159,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  BFO2020
+IMPORTS =  bfo2020
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -403,10 +403,10 @@ IMP_LARGE=true # Global parameter to bypass handling of large imports
 ifeq ($(strip $(MIR)),true)
 
 
-## ONTOLOGY: BFO2020
-.PHONY: mirror-BFO2020
-.PRECIOUS: $(MIRRORDIR)/BFO2020.owl
-mirror-BFO2020: | $(TMPDIR)
+## ONTOLOGY: bfo2020
+.PHONY: mirror-bfo2020
+.PRECIOUS: $(MIRRORDIR)/bfo2020.owl
+mirror-bfo2020: | $(TMPDIR)
 	$(ROBOT) convert -I http://purl.obolibrary.org/obo/bfo/2020/bfo-core.owl -o $(TMPDIR)/$@.owl
 
 

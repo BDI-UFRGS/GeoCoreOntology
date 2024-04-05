@@ -1,4 +1,4 @@
-Prefix(:=<http://purl.obolibrary.org/obo/geocore/imports/BFO2020_import.owl#>)
+Prefix(:=<https:/www.inf.ufrgs.br/bdi/ontologies/imports/bfo2020_import.owl#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -6,15 +6,16 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-Ontology(<http://purl.obolibrary.org/obo/geocore/imports/BFO2020_import.owl>
-<http://purl.obolibrary.org/obo/geocore/releases/2024-04-04/imports/BFO2020_import.owl>
+Ontology(<https:/www.inf.ufrgs.br/bdi/ontologies/imports/bfo2020_import.owl>
+<https:/www.inf.ufrgs.br/bdi/ontologies/releases/2024-04-05/imports/bfo2020_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/bfo/2020/bfo-core.owl>)
-Annotation(owl:versionInfo "2024-04-04")
+Annotation(owl:versionInfo "2024-04-05")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000004>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000006>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000008>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
@@ -22,6 +23,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000019>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000020>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000024>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000029>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000030>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000031>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000035>))
@@ -30,6 +32,14 @@ Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000140>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000141>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000145>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000056>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000057>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000084>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000101>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000194>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000195>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000196>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000197>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/identifier>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
@@ -40,6 +50,93 @@ Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#altLabel>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#definition>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#example>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#scopeNote>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000056> (participates in)
+
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/identifier> <http://purl.obolibrary.org/obo/BFO_0000056> "250-BFO")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000056> "participates in"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000056> "(Elucidation) participates in holds between some b that is either a specifically dependent continuant or generically dependent continuant or independent continuant that is not a spatial region & some process p such that b participates in p some way"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> <http://purl.obolibrary.org/obo/BFO_0000056> "Users that require more sophisticated representations of time are encouraged to import a temporal extension of BFO-Core provided by the BFO development team. See documentation for guidance: <Link>"@en)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000056> <http://purl.obolibrary.org/obo/BFO_0000057>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000056> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000031> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000004> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000006>))))
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000056> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000057> (has participant)
+
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/identifier> <http://purl.obolibrary.org/obo/BFO_0000057> "248-BFO")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000057> "has participant"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000057> "p has participant c =Def c participates in p"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> <http://purl.obolibrary.org/obo/BFO_0000057> "Users that require more sophisticated representations of time are encouraged to import a temporal extension of BFO-Core provided by the BFO development team. See documentation for guidance: <Link>"@en)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000057> <http://purl.obolibrary.org/obo/BFO_0000015>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000057> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000031> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000004> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000006>))))
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000084> (generically depends on)
+
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/identifier> <http://purl.obolibrary.org/obo/BFO_0000084> "252-BFO")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000084> "generically depends on"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://purl.obolibrary.org/obo/BFO_0000084> "g-depends on"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000084> "b generically depends on c =Def b is a generically dependent continuant & c is an independent continuant that is not a spatial region & at some time t there inheres in c a specifically dependent continuant which concretizes b at t"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> <http://purl.obolibrary.org/obo/BFO_0000084> "Users that require more sophisticated representations of time are encouraged to import a temporal extension of BFO-Core provided by the BFO development team. See documentation for guidance: <Link>"@en)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000084> <http://purl.obolibrary.org/obo/BFO_0000101>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000084> <http://purl.obolibrary.org/obo/BFO_0000031>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000084> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000004> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000006>)))
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000101> (is carrier of)
+
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/identifier> <http://purl.obolibrary.org/obo/BFO_0000101> "254-BFO")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000101> "is carrier of"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000101> "b is carrier of c =Def there is some time t such that c generically depends on b at t"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> <http://purl.obolibrary.org/obo/BFO_0000101> "Users that require more sophisticated representations of time are encouraged to import a temporal extension of BFO-Core provided by the BFO development team. See documentation for guidance: <Link>"@en)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000101> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000004> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000006>)))
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000101> <http://purl.obolibrary.org/obo/BFO_0000031>)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000194> (specifically depended on by)
+
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/identifier> <http://purl.obolibrary.org/obo/BFO_0000194> "260-BFO")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000194> "specifically depended on by"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://purl.obolibrary.org/obo/BFO_0000194> "s-depended on by"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000194> "b specifically depended on by c =Def c specifically depends on b"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000194> "Coloured object specifically depended on by colour"@en)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000194> <http://purl.obolibrary.org/obo/BFO_0000195>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000194> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000020> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000004> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000006>))))
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000194> <http://purl.obolibrary.org/obo/BFO_0000020>)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000195> (specifically depends on)
+
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/identifier> <http://purl.obolibrary.org/obo/BFO_0000195> "012-BFO")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000195> "specifically depends on"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://purl.obolibrary.org/obo/BFO_0000195> "s-depends on"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000195> "(Elucidation) specifically depends on is a relation between a specifically dependent continuant b and specifically dependent continuant or independent continuant that is not a spatial region c such that b and c share no parts in common & b is of a nature such that at all times t it cannot exist unless c exists & b is not a boundary of c"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000195> "A shape specifically depends on the shaped object; hue, saturation and brightness of a colour sample specifically depends on each other"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> <http://purl.obolibrary.org/obo/BFO_0000195> "The analogue of specifically depends on for occurrents is has participant."@en)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000195> <http://purl.obolibrary.org/obo/BFO_0000020>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000195> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000020> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000004> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000006>))))
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000196> (bearer of)
+
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/identifier> <http://purl.obolibrary.org/obo/BFO_0000196> "053-BFO")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000196> "bearer of"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000196> "b bearer of c =Def c inheres in b"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000196> "A patch of ink is the bearer of a colour quality; an organism is the bearer of a temperature quality"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/BFO_0000196> <http://purl.obolibrary.org/obo/BFO_0000194>)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000196> <http://purl.obolibrary.org/obo/BFO_0000197>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000196> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000004> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000006>)))
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000196> <http://purl.obolibrary.org/obo/BFO_0000020>)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000197> (inheres in)
+
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/identifier> <http://purl.obolibrary.org/obo/BFO_0000197> "051-BFO")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000197> "inheres in"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000197> "b inheres in c =Def b is a specifically dependent continuant & c is an independent continuant that is not a spatial region & b specifically depends on c"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000197> "A shape inheres in a shaped object; a mass inheres in a material entity"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/BFO_0000197> <http://purl.obolibrary.org/obo/BFO_0000195>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000197> <http://purl.obolibrary.org/obo/BFO_0000020>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000197> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000004> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000006>)))
+
 
 
 ############################
@@ -77,6 +174,14 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000004> "ind
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000004> "b is an independent continuant =Def b is a continuant & there is no c such that b specifically depends on c or b generically depends on c"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000004> "An atom; a molecule; an organism; a heart; a chair; the bottom right portion of a human torso; a leg; the interior of your mouth; a spatial region; an orchestra"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000006> (spatial region)
+
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/identifier> <http://purl.obolibrary.org/obo/BFO_0000006> "035-BFO")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000006> "spatial region"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000006> "(Elucidation) A spatial region is a continuant entity that is a continuant part of the spatial projection of a portion of spacetime at a given time"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000006> "As for zero-dimensional spatial region, one-dimensional spatial region, two-dimensional spatial region, three-dimensional spatial region"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000006> <http://purl.obolibrary.org/obo/BFO_0000141>)
 
 # Class: <http://purl.obolibrary.org/obo/BFO_0000008> (temporal region)
 
@@ -138,6 +243,14 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.o
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> <http://purl.obolibrary.org/obo/BFO_0000027> "'Exactly' means that there are no parts of the object aggregate other than its member parts.")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> <http://purl.obolibrary.org/obo/BFO_0000027> "The unit can, at certain times, consist of exactly one object, for example, when a wolf litter loses all but one of its pups, but it must at some time have a plurality of member parts.")
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000027> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000029> (site)
+
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/identifier> <http://purl.obolibrary.org/obo/BFO_0000029> "034-BFO")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000029> "site"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000029> "(Elucidation) A site is a three-dimensional immaterial entity whose boundaries either (partially or wholly) coincide with the boundaries of one or more material entities or have locations determined in relation to some material entity"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000029> "A hole in a portion of cheese; a rabbit hole; the Grand Canyon; the Piazza San Marco; the kangaroo-joey-containing hole of a kangaroo pouch; your left nostril (a fiat part - the opening - of your left nasal cavity); the lumen of your gut; the hold of a ship; the interior of the trunk of your car; hole in an engineered floor joist"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000029> <http://purl.obolibrary.org/obo/BFO_0000141>)
 
 # Class: <http://purl.obolibrary.org/obo/BFO_0000030> (object)
 
@@ -208,5 +321,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000145> <http://purl.obolibrary.
 
 
 DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000031>)
+DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000006> <http://purl.obolibrary.org/obo/BFO_0000029> <http://purl.obolibrary.org/obo/BFO_0000140>)
 DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000008> <http://purl.obolibrary.org/obo/BFO_0000011> <http://purl.obolibrary.org/obo/BFO_0000015> <http://purl.obolibrary.org/obo/BFO_0000035>)
 )
