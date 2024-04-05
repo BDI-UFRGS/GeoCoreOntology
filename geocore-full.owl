@@ -12,13 +12,13 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https:/www.inf.ufrgs.br/bdi/ontologies/geocore-full.owl">
         <owl:versionIRI rdf:resource="https:/www.inf.ufrgs.br/bdi/ontologies/releases/2024-04-05/geocore-full.owl"/>
-        <dc:contributor>Fernando Cicconeto</dc:contributor>
+        <dc:contributor>Alcides Lopes</dc:contributor>
+        <dc:contributor>Fernando Ciconetto</dc:contributor>
         <dc:contributor>Joel Luis Carbonera</dc:contributor>
         <dc:contributor>Luan Fonseca Garcia</dc:contributor>
         <dc:contributor>Lucas Valadares Vieira</dc:contributor>
         <dc:contributor>Mara Abel</dc:contributor>
-        <dc:contributor xml:lang="en">Mara Abel</dc:contributor>
-        <dc:contributor xml:lang="en">Michel Perrin</dc:contributor>
+        <dc:contributor>Michel Perrin</dc:contributor>
         <dc:contributor>Renata dos Santos Alvarenga</dc:contributor>
         <terms:description>GeoCore Ontology is a core ontology for general use in Geology. It contains a limited set of concepts that are shared among various subdomains of Geology. Having a common core set of concepts is key in order to integrate and develop knowledge bases in the domain.
 
