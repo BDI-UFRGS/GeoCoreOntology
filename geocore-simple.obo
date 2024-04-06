@@ -28,6 +28,7 @@ property_value: IAO:0000116 "A geological object is a naturally occurring entity
 id: GEOCORE:0000002
 name: geological process
 def: "It is a physical, or chemical, or biological, naturally occurring process that occurs on the Earth’s surface or subsurface and occupies some 'geological time interval'" []
+relationship: BFO:0000199 GEOCORE:0000005 ! occupies temporal region geological time interval
 property_value: altLabel "processo geológico" xsd:string
 property_value: IAO:0000112 "Examples are the process of deposition, the process of folding, a tectonic process, a sedimentary process." xsd:string
 property_value: IAO:0000116 "Geological processes are macro processes that generate, transform, deform, transport, or destroy geological objects and earth materials. These processes are not necessarily atomic and may have other geological processes as parts." xsd:string
@@ -142,6 +143,14 @@ name: inheres in
 property_value: definition "b inheres in c =Def b is a specifically dependent continuant & c is an independent continuant that is not a spatial region & b specifically depends on c" xsd:string
 property_value: example "A shape inheres in a shaped object; a mass inheres in a material entity" xsd:string
 property_value: http://purl.org/dc/elements/1.1/identifier "051-BFO" xsd:string
+
+[Typedef]
+id: BFO:0000199
+name: occupies temporal region
+property_value: definition "p occupies temporal region t =Def p is a process or process boundary & the spatiotemporal region occupied by p temporally projects onto t" xsd:string
+property_value: example "The Second World War occupies the temporal region September 1, 1939 - September 2, 1945" xsd:string
+property_value: http://purl.org/dc/elements/1.1/identifier "132-BFO" xsd:string
+is_functional: true
 
 [Typedef]
 id: GEOCORE:0000013

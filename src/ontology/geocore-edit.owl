@@ -130,6 +130,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <https://www.in
 AnnotationAssertion(rdfs:label <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000002> "geological process"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000002> "processo geológico"@pt)
 SubClassOf(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000002> <http://purl.obolibrary.org/obo/BFO_0000015>)
+SubClassOf(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000199> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000005>))
 
 # Class: <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000003> (geological age)
 
