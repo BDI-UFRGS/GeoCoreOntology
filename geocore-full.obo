@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: https://www.inf.ufrgs.br/bdi/ontologies/geocore/releases/2024-04-05/geocore-full.owl
+data-version: https://www.inf.ufrgs.br/bdi/ontologies/geocore/releases/2024-04-06/geocore-full.owl
 ontology: https://www.inf.ufrgs.br/bdi/ontologies/geocore/geocore-full.owl
 property_value: http://purl.org/dc/elements/1.1/contributor "Alcides Lopes" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "Fernando Ciconetto" xsd:string
@@ -12,7 +12,7 @@ property_value: http://purl.org/dc/elements/1.1/contributor "Renata dos Santos A
 property_value: http://purl.org/dc/terms/description "GeoCore Ontology is a core ontology for general use in Geology. It contains a limited set of concepts that are shared among various subdomains of Geology. Having a common core set of concepts is key in order to integrate and develop knowledge bases in the domain.\n\nGeoCore is a collaborative effort between the Informatics Institute at UFRGS (Brazil) and Geosiris Company (France).\n\nFor more details check the original publication at https://doi.org/10.1016/j.cageo.2019.104387" xsd:string
 property_value: http://purl.org/dc/terms/license "https://creativecommons.org/licenses/by-nc/4.0/" xsd:string
 property_value: http://purl.org/dc/terms/title "GeoCore Ontology" xsd:string
-property_value: owl:versionInfo "2024-04-05" xsd:string
+property_value: owl:versionInfo "2024-04-06" xsd:string
 
 [Term]
 id: BFO:0000001

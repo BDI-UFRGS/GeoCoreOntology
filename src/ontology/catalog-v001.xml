@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri name="https:/www.inf.ufrgs.br/bdi/ontologies/releases/2024-04-05/imports/bfo2020_import.owl" uri="imports/bfo2020_import.owl"/>
+    <uri name="https://www.inf.ufrgs.br/bdi/ontologies/geocore/imports/bfo2020_import.owl" uri="imports/bfo2020_import.owl"/>
 </catalog>

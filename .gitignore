@@ -21,6 +21,7 @@ src/ontology/geocore-basic.*
 src/ontology/geocore-full.*
 src/ontology/geocore-simple.*
 src/ontology/geocore-simple-non-classified.*
+src/ontology/geocore-edit.properties
 
 src/ontology/seed.txt
 src/ontology/dosdp-tools.log

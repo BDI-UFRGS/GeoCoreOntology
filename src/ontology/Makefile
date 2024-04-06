@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                969e3916f0c38d70e65f3485ec8710655dda63498b694f502a592364b8d07d6d
+CONFIG_HASH=                6b7ef9f1486a759861c57aab2dffea70183d00f0c69551fdd74d44c61a6555fc
 
 
 # ----------------------------------------
@@ -370,6 +370,8 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms_combined.txt
 		$(ANNOTATE_CONVERT_FILE); fi
 
 .PRECIOUS: $(IMPORTDIR)/%_import.owl
+
+## Module for ontology: bfo2020
 
 
 .PHONY: refresh-imports

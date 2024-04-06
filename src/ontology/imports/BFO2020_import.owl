@@ -1,4 +1,4 @@
-Prefix(:=<https:/www.inf.ufrgs.br/bdi/ontologies/imports/bfo2020_import.owl#>)
+Prefix(:=<https://www.inf.ufrgs.br/bdi/ontologies/geocore/imports/bfo2020_import.owl#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -6,10 +6,10 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-Ontology(<https:/www.inf.ufrgs.br/bdi/ontologies/imports/bfo2020_import.owl>
-<https:/www.inf.ufrgs.br/bdi/ontologies/releases/2024-04-05/imports/bfo2020_import.owl>
+Ontology(<https://www.inf.ufrgs.br/bdi/ontologies/geocore/imports/bfo2020_import.owl>
+<https://www.inf.ufrgs.br/bdi/ontologies/geocore/releases/2024-04-06/imports/bfo2020_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/bfo/2020/bfo-core.owl>)
-Annotation(owl:versionInfo "2024-04-05")
+Annotation(owl:versionInfo "2024-04-06")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
