@@ -31,6 +31,7 @@ id: GEOCORE:0000002
 name: geological process
 def: "It is a physical, or chemical, or biological, naturally occurring process that occurs on the Earth’s surface or subsurface and occupies some 'geological time interval'" []
 is_a: BFO:0000015
+relationship: BFO:0000199 GEOCORE:0000005 ! geological time interval
 property_value: altLabel "processo geológico" xsd:string
 property_value: IAO:0000112 "Examples are the process of deposition, the process of folding, a tectonic process, a sedimentary process." xsd:string
 property_value: IAO:0000116 "Geological processes are macro processes that generate, transform, deform, transport, or destroy geological objects and earth materials. These processes are not necessarily atomic and may have other geological processes as parts." xsd:string
