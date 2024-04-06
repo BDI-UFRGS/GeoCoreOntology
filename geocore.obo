@@ -1,0 +1,419 @@
+format-version: 1.2
+data-version: https://www.inf.ufrgs.br/bdi/ontologies/geocore/releases/2024-04-06/geocore.owl
+ontology: https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl
+property_value: http://purl.org/dc/elements/1.1/contributor "Alcides Lopes" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Fernando Ciconetto" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Joel Luis Carbonera" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Luan Fonseca Garcia" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Lucas Valadares Vieira" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Mara Abel" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Michel Perrin" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Renata dos Santos Alvarenga" xsd:string
+property_value: http://purl.org/dc/terms/description "GeoCore Ontology is a core ontology for general use in Geology. It contains a limited set of concepts that are shared among various subdomains of Geology. Having a common core set of concepts is key in order to integrate and develop knowledge bases in the domain.\n\nGeoCore is a collaborative effort between the Informatics Institute at UFRGS (Brazil) and Geosiris Company (France).\n\nFor more details check the original publication at https://doi.org/10.1016/j.cageo.2019.104387" xsd:string
+property_value: http://purl.org/dc/terms/license "https://creativecommons.org/licenses/by-nc/4.0/" xsd:string
+property_value: http://purl.org/dc/terms/title "GeoCore Ontology" xsd:string
+property_value: owl:versionInfo "2024-04-06" xsd:string
+
+[Term]
+id: BFO:0000001
+name: entity
+property_value: definition "(Elucidation) An entity is anything that exists or has existed or will exist" xsd:string
+property_value: example "Julius Caesar; the Second World War; your body mass index; Verdi's Requiem" xsd:string
+property_value: http://purl.org/dc/elements/1.1/identifier "001-BFO" xsd:string
+
+[Term]
+id: BFO:0000002
+name: continuant
+is_a: BFO:0000001 ! entity
+disjoint_from: BFO:0000003 ! occurrent
+property_value: definition "(Elucidation) A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity" xsd:string
+property_value: example "A human being; a tennis ball; a cave; a region of space; someone's temperature" xsd:string
+property_value: http://purl.org/dc/elements/1.1/identifier "008-BFO" xsd:string
+
+[Term]
+id: BFO:0000003
+name: occurrent
+is_a: BFO:0000001 ! entity
+property_value: definition "(Elucidation) An occurrent is an entity that unfolds itself in time or it is the start or end of such an entity or it is a temporal or spatiotemporal region" xsd:string
+property_value: example "As for process, history, process boundary, spatiotemporal region, zero-dimensional temporal region, one-dimensional temporal region, temporal interval, temporal instant." xsd:string
+property_value: http://purl.org/dc/elements/1.1/identifier "077-BFO" xsd:string
+
+[Term]
+id: BFO:0000004
+name: independent continuant
+is_a: BFO:0000002 ! continuant
+disjoint_from: BFO:0000020 ! specifically dependent continuant
+property_value: definition "b is an independent continuant =Def b is a continuant & there is no c such that b specifically depends on c or b generically depends on c" xsd:string
+property_value: example "An atom; a molecule; an organism; a heart; a chair; the bottom right portion of a human torso; a leg; the interior of your mouth; a spatial region; an orchestra" xsd:string
+property_value: http://purl.org/dc/elements/1.1/identifier "017-BFO" xsd:string
+
+[Term]
+id: BFO:0000006
+name: spatial region
+is_a: BFO:0000141 ! immaterial entity
+disjoint_from: BFO:0000029 ! site
+property_value: definition "(Elucidation) A spatial region is a continuant entity that is a continuant part of the spatial projection of a portion of spacetime at a given time" xsd:string
+property_value: example "As for zero-dimensional spatial region, one-dimensional spatial region, two-dimensional spatial region, three-dimensional spatial region" xsd:string
+property_value: http://purl.org/dc/elements/1.1/identifier "035-BFO" xsd:string
+
+[Term]
+id: BFO:0000008
+name: temporal region
+is_a: BFO:0000003 ! occurrent
+disjoint_from: BFO:0000011 ! spatiotemporal region
+property_value: definition "(Elucidation) A temporal region is an occurrent over which processes can unfold" xsd:string
+property_value: example "As for zero-dimensional temporal region and one-dimensional temporal region" xsd:string
+property_value: http://purl.org/dc/elements/1.1/identifier "100-BFO" xsd:string
+
+[Term]
+id: BFO:0000011
+name: spatiotemporal region
+is_a: BFO:0000003 ! occurrent
+property_value: definition "(Elucidation) A spatiotemporal region is an occurrent that is an occurrent part of spacetime" xsd:string
+property_value: example "The spatiotemporal region occupied by the development of a cancer tumour; the spatiotemporal region occupied by an orbiting satellite" xsd:string
+property_value: http://purl.org/dc/elements/1.1/identifier "095-BFO" xsd:string
+property_value: scopeNote "'Spacetime' here refers to the maximal instance of the universal spatiotemporal region." xsd:string
+
+[Term]
+id: BFO:0000015
+name: process
+is_a: BFO:0000003 ! occurrent
+property_value: altLabel "event" xsd:string
+property_value: definition "(Elucidation) p is a process means p is an occurrent that has some temporal proper part and for some time t, p has some material entity as participant" xsd:string
+property_value: example "An act of selling; the life of an organism; a process of sleeping; a process of cell-division; a beating of the heart; a process of meiosis; the taxiing of an aircraft; the programming of a computer" xsd:string
+property_value: http://purl.org/dc/elements/1.1/identifier "083-BFO" xsd:string
+
+[Term]
+id: BFO:0000019
+name: quality
+is_a: BFO:0000020 ! specifically dependent continuant
+property_value: definition "(Elucidation) A quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized" xsd:string
+property_value: example "The colour of a tomato; the ambient temperature of this portion of air; the length of the circumference of your waist; the shape of your nose; the shape of your nostril; the mass of this piece of gold" xsd:string
+property_value: http://purl.org/dc/elements/1.1/identifier "055-BFO" xsd:string
+
+[Term]
+id: BFO:0000020
+name: specifically dependent continuant
+is_a: BFO:0000002 ! continuant
+property_value: definition "b is a specifically dependent continuant =Def b is a continuant & there is some independent continuant c which is not a spatial region & which is such that b specifically depends on c" xsd:string
+property_value: example "(with multiple bearers) John's love for Mary; the ownership relation between John and this statue; the relation of authority between John and his subordinates" xsd:string
+property_value: example "(with one bearer) The mass of this tomato; the pink colour of a medium rare piece of grilled filet mignon at its centre; the smell of this portion of mozzarella; the disposition of this fish to decay; the role of being a doctor; the function of this heart to pump blood; the shape of this hole" xsd:string
+property_value: http://purl.org/dc/elements/1.1/identifier "050-BFO" xsd:string
+
+[Term]
+id: BFO:0000024
+name: fiat object part
+is_a: BFO:0000040 ! material entity
+property_value: definition "(Elucidation) A fiat object part b is a material entity & such that if b exists then it is continuant part of some object c & demarcated from the remainder of c by one or more fiat surfaces" xsd:string
+property_value: example "The upper and lower lobes of the left lung; the dorsal and ventral surfaces of the body; the Western hemisphere of the Earth; the FMA:regional parts of an intact human body" xsd:string
+property_value: http://purl.org/dc/elements/1.1/identifier "027-BFO" xsd:string
+
+[Term]
+id: BFO:0000027
+name: object aggregate
+is_a: BFO:0000040 ! material entity
+property_value: definition "(Elucidation) An object aggregate is a material entity consisting exactly of a plurality (≥1) of objects as member parts which together form a unit" xsd:string
+property_value: example "The aggregate of the musicians in a symphony orchestra and their instruments; the aggregate of bearings in a constant velocity axle joint; the nitrogen atoms in the atmosphere; a collection of cells in a blood biobank" xsd:string
+property_value: http://purl.org/dc/elements/1.1/identifier "025-BFO" xsd:string
+property_value: scopeNote "'Exactly' means that there are no parts of the object aggregate other than its member parts." xsd:string
+property_value: scopeNote "The unit can, at certain times, consist of exactly one object, for example, when a wolf litter loses all but one of its pups, but it must at some time have a plurality of member parts." xsd:string
+
+[Term]
+id: BFO:0000029
+name: site
+is_a: BFO:0000141 ! immaterial entity
+property_value: definition "(Elucidation) A site is a three-dimensional immaterial entity whose boundaries either (partially or wholly) coincide with the boundaries of one or more material entities or have locations determined in relation to some material entity" xsd:string
+property_value: example "A hole in a portion of cheese; a rabbit hole; the Grand Canyon; the Piazza San Marco; the kangaroo-joey-containing hole of a kangaroo pouch; your left nostril (a fiat part - the opening - of your left nasal cavity); the lumen of your gut; the hold of a ship; the interior of the trunk of your car; hole in an engineered floor joist" xsd:string
+property_value: http://purl.org/dc/elements/1.1/identifier "034-BFO" xsd:string
+
+[Term]
+id: BFO:0000030
+name: object
+is_a: BFO:0000040 ! material entity
+property_value: definition "(Elucidation) An object is a material entity which manifests causal unity & is of a type instances of which are maximal relative to the sort of causal unity manifested" xsd:string
+property_value: example "An organism; a fish tank; a planet; a laptop; a valve; a block of marble; an ice cube" xsd:string
+property_value: http://purl.org/dc/elements/1.1/identifier "024-BFO" xsd:string
+property_value: scopeNote "A description of three primary sorts of causal unity is provided in Basic Formal Ontology 2.0. Specification and User Guide" xsd:string
+
+[Term]
+id: BFO:0000031
+name: generically dependent continuant
+is_a: BFO:0000002 ! continuant
+property_value: altLabel "g-dependent continuant" xsd:string
+property_value: definition "(Elucidation) A generically dependent continuant is an entity that exists in virtue of the fact that there is at least one of what may be multiple copies which is the content or the pattern that multiple copies would share" xsd:string
+property_value: example "The pdf file on your laptop; the pdf file that is a copy thereof on my laptop; the sequence of this protein molecule; the sequence that is a copy thereof in that protein molecule; the content that is shared by a string of dots and dashes written on a page and the transmitted Morse code signal; the content of a sentence; an engineering blueprint" xsd:string
+property_value: http://purl.org/dc/elements/1.1/identifier "074-BFO" xsd:string
+
+[Term]
+id: BFO:0000035
+name: process boundary
+is_a: BFO:0000003 ! occurrent
+property_value: definition "p is a process boundary =Def p is a temporal part of a process & p has no proper temporal parts" xsd:string
+property_value: example "The boundary between the 2nd and 3rd year of your life" xsd:string
+property_value: http://purl.org/dc/elements/1.1/identifier "084-BFO" xsd:string
+
+[Term]
+id: BFO:0000038
+name: one-dimensional temporal region
+is_a: BFO:0000008 ! temporal region
+property_value: definition "(Elucidation) A one-dimensional temporal region is a temporal region that is a whole that has a temporal interval and zero or more temporal intervals and temporal instants as parts" xsd:string
+property_value: example "The temporal region during which a process occurs" xsd:string
+property_value: http://purl.org/dc/elements/1.1/identifier "103-BFO" xsd:string
+
+[Term]
+id: BFO:0000040
+name: material entity
+is_a: BFO:0000004 ! independent continuant
+disjoint_from: BFO:0000141 ! immaterial entity
+property_value: definition "(Elucidation) A material entity is an independent continuant has some portion of matter as continuant part" xsd:string
+property_value: example "A human being; the undetached arm of a human being; an aggregate of human beings" xsd:string
+property_value: http://purl.org/dc/elements/1.1/identifier "019-BFO" xsd:string
+
+[Term]
+id: BFO:0000140
+name: continuant fiat boundary
+is_a: BFO:0000141 ! immaterial entity
+property_value: definition "(Elucidation) A continuant fiat boundary b is an immaterial entity that is of zero, one or two dimensions & such that there is no time t when b has a spatial region as continuant part & whose location is determined in relation to some material entity" xsd:string
+property_value: example "As for fiat point, fiat line, fiat surface" xsd:string
+property_value: http://purl.org/dc/elements/1.1/identifier "029-BFO" xsd:string
+
+[Term]
+id: BFO:0000141
+name: immaterial entity
+is_a: BFO:0000004 ! independent continuant
+property_value: definition "b is an immaterial entity =Def b is an independent continuant which is such that there is no time t when it has a material entity as continuant part" xsd:string
+property_value: example "As for fiat point, fiat line, fiat surface, site" xsd:string
+property_value: http://purl.org/dc/elements/1.1/identifier "028-BFO" xsd:string
+
+[Term]
+id: BFO:0000145
+name: relational quality
+is_a: BFO:0000019 ! quality
+property_value: definition "b is a relational quality =Def b is a quality & there exists c and d such that c and d are not identical & b specifically depends on c & b specifically depends on d" xsd:string
+property_value: example "A marriage bond; an instance of love; an obligation between one person and another" xsd:string
+property_value: http://purl.org/dc/elements/1.1/identifier "057-BFO" xsd:string
+
+[Term]
+id: BFO:0000146
+name: fiat surface
+is_a: BFO:0000140 ! continuant fiat boundary
+property_value: definition "(Elucidation) A fiat surface is a two-dimensional continuant fiat boundary that is self-connected" xsd:string
+property_value: example "The surface of the Earth; the plane separating the smoking from the non-smoking zone in a restaurant" xsd:string
+property_value: http://purl.org/dc/elements/1.1/identifier "033-BFO" xsd:string
+
+[Term]
+id: GEOCORE:0000001
+name: geological object
+def: "An object that is 'generated by' some 'geological process' and has at least one part 'constituted by' some 'earth material' that is not an 'earth fluid'." []
+is_a: BFO:0000030 ! object
+disjoint_from: GEOCORE:0000006 ! earth material
+relationship: GEOCORE:0000013 GEOCORE:0000002 {all_only="true"} ! generated by geological process
+relationship: GEOCORE:0000015 GEOCORE:0000003 ! has age geological age
+property_value: altLabel "objeto geológico" xsd:string
+property_value: IAO:0000116 "A geological object is a naturally occurring entity because a geological process\ngenerates it, and some earth material constitutes it. Thus, we can differentiate geological objects from artificial objects, such as a well-core, because even though some earth material constitutes artificial objects, they are human-made rather than generated by some geological process. Furthermore, Geological Objects are specializations of BFO Objects, meaning they must necessarily have some unity criteria. The unity is what differentiates geological objects from Earth Materials." xsd:string
+
+[Term]
+id: GEOCORE:0000002
+name: geological process
+def: "It is a physical, or chemical, or biological, naturally occurring process that occurs on the Earth’s surface or subsurface and occupies some 'geological time interval'" []
+is_a: BFO:0000015 ! process
+property_value: altLabel "processo geológico" xsd:string
+property_value: IAO:0000112 "Examples are the process of deposition, the process of folding, a tectonic process, a sedimentary process." xsd:string
+property_value: IAO:0000116 "Geological processes are macro processes that generate, transform, deform, transport, or destroy geological objects and earth materials. These processes are not necessarily atomic and may have other geological processes as parts." xsd:string
+
+[Term]
+id: GEOCORE:0000003
+name: geological age
+def: "It is a quality that 'inheres in' a 'geological object' or 'earth material' that corresponds to the 'geological time interval' in which the 'geological process' that it was 'generated by' occupied." []
+is_a: BFO:0000019 ! quality
+property_value: altLabel "idade geológica" xsd:string
+
+[Term]
+id: GEOCORE:0000004
+name: geological structure
+def: "It is a 'generically dependent continuant' that is the pattern of a non-atomic 'geological object''s internal arrangement." []
+is_a: BFO:0000031 ! generically dependent continuant
+relationship: BFO:0000084 GEOCORE:0000001 ! generically depends on geological object
+property_value: altLabel "estrutura geológica" xsd:string
+property_value: IAO:0000116 "Geological structures are general material patterns repeated in many geological\nobjects. The pattern comprises the material configuration and the mutual relationships of the object’s different parts. Structures result from one or a series of geological processes that generated or transformed the geological object they generically depend on. Thus, there is some historical dependence relation between the structure and this geological process, but what concretizes the structure is some complex quality inhering in the object, not the process." xsd:string
+
+[Term]
+id: GEOCORE:0000005
+name: geological time interval
+def: "It is a BFO temporal interval that corresponds to a time interval within the Geological Time Scale." []
+is_a: BFO:0000038 ! one-dimensional temporal region
+property_value: altLabel "intervalo de tempo geológico" xsd:string
+
+[Term]
+id: GEOCORE:0000006
+name: earth material
+def: "It is a natural amount of matter 'generated by' some 'geological process'." []
+is_a: BFO:0000040 ! material entity
+relationship: GEOCORE:0000013 GEOCORE:0000002 {all_only="true"} ! generated by geological process
+relationship: GEOCORE:0000015 GEOCORE:0000003 ! has age geological age
+property_value: altLabel "material geologico" xsd:string
+property_value: IAO:0000112 "Examples are an amount of sandstone, an amount of petroleum, an amount of\nnatural gas." xsd:string
+property_value: IAO:0000116 "Earth Materials are natural amounts of matter. Thus, they come into existence by nature, without any artificial aid. Since they are amounts, they don’t hold unity criteria, but they are ontologically rigid and provide an identity criteria. Earth Materials and BFO Objects are disjoint. They are either solid, fluid, or unconsolidated. We usually observe earth materials when constituting other objects, such as an amount of rock constituting a geological unity or an amount of sand constituting a dune." xsd:string
+
+[Term]
+id: GEOCORE:0000007
+name: amount of mineral
+def: "An amount of rock is an 'earth material' that is a naturally occuring, inorganic, solid, homogeneous chemical compound with a crystalline structure." []
+is_a: GEOCORE:0000006 ! earth material
+disjoint_from: GEOCORE:0000008 ! amount of rock
+disjoint_from: GEOCORE:0000008 ! amount of rock
+property_value: altLabel "quantidade de mineral" xsd:string
+property_value: IAO:0000112 "The amount of quarts that constitutes some grain, the amount of feldspar that is part of an amount of rock." xsd:string
+property_value: IAO:0000116 "Amounts of mineral lack a unity criteria as every other 'earth material'. We usually observe them when they are constitution objects such as crystals or grains." xsd:string
+
+[Term]
+id: GEOCORE:0000008
+name: amount of rock
+def: "An amount of rock is a solid consolidated 'earth material' that is 'constituted by' an aggregate of particles made of mineral matter or material of biological origin." []
+is_a: GEOCORE:0000006 ! earth material
+disjoint_from: GEOCORE:0000009 ! earth fluid
+property_value: altLabel "quantidade de rocha" xsd:string
+property_value: IAO:0000112 "The amount of sandstone that constitutes a lithostratigraphic unit." xsd:string
+property_value: IAO:0000116 "Geologists define rocks at a scale of observation where they consider them homogeneous, even though an aggregate of solid particles constitutes it. These particles are usually geological objects, such as grains or crystals, or the rest of dead animals or plants. \n\nAmounts of rock, like other earth materials, are independent rigid entities that do not hold any unity criteria. We can observe them in nature when they are constituting objects such as geological unities." xsd:string
+
+[Term]
+id: GEOCORE:0000009
+name: earth fluid
+def: "Earth fluid is an 'earth material' that is fluild." []
+is_a: GEOCORE:0000006 ! earth material
+property_value: altLabel "fluido da terra" xsd:string
+property_value: IAO:0000116 "Earth fluids can be water, oil, gas or a mixture of those fluids." xsd:string
+
+[Term]
+id: GEOCORE:0000010
+name: unconsolidated earth material
+def: "Unconsolidated earth material is an 'earth material' that is consituted by an aggregate of solid particles but is not consolidated into a 'rock' it self." []
+is_a: GEOCORE:0000006 ! earth material
+property_value: altLabel "material geológico inconsolidado" xsd:string
+
+[Term]
+id: GEOCORE:0000011
+name: geological boundary
+def: "It is a fiat surface that is 'located in' the external surface of a 'geological object'." []
+is_a: BFO:0000146 ! fiat surface
+property_value: altLabel "limite geológico" xsd:string
+property_value: IAO:0000116 "The 'geological boundary' of a 'geological object' coincides with the complete physical discontinuity that delimits it." xsd:string
+
+[Term]
+id: GEOCORE:0000012
+name: geological contact
+def: "It is a 'relational quality' that 'inheres in' two distinct 'geological object' that are 'externally connected with'" []
+is_a: BFO:0000145 ! relational quality
+relationship: BFO:0000197 GEOCORE:0000001 {cardinality="2"} ! inheres in geological object
+property_value: altLabel "contato geológico" xsd:string
+property_value: IAO:0000116 "A geological contact exists when two distinct geological objects are externally\nconnected with, i.e., their external boundaries are physically adjacent. Objects that are in contact do not have any kind of proper parthood relationship between them." xsd:string
+
+[Typedef]
+id: BFO:0000056
+name: participates in
+property_value: definition "(Elucidation) participates in holds between some b that is either a specifically dependent continuant or generically dependent continuant or independent continuant that is not a spatial region & some process p such that b participates in p some way" xsd:string
+property_value: http://purl.org/dc/elements/1.1/identifier "250-BFO" xsd:string
+property_value: scopeNote "Users that require more sophisticated representations of time are encouraged to import a temporal extension of BFO-Core provided by the BFO development team. See documentation for guidance: <Link>" xsd:string
+range: BFO:0000015 ! process
+inverse_of: BFO:0000057 ! has participant
+
+[Typedef]
+id: BFO:0000057
+name: has participant
+property_value: definition "p has participant c =Def c participates in p" xsd:string
+property_value: http://purl.org/dc/elements/1.1/identifier "248-BFO" xsd:string
+property_value: scopeNote "Users that require more sophisticated representations of time are encouraged to import a temporal extension of BFO-Core provided by the BFO development team. See documentation for guidance: <Link>" xsd:string
+domain: BFO:0000015 ! process
+
+[Typedef]
+id: BFO:0000084
+name: generically depends on
+property_value: altLabel "g-depends on" xsd:string
+property_value: definition "b generically depends on c =Def b is a generically dependent continuant & c is an independent continuant that is not a spatial region & at some time t there inheres in c a specifically dependent continuant which concretizes b at t" xsd:string
+property_value: http://purl.org/dc/elements/1.1/identifier "252-BFO" xsd:string
+property_value: scopeNote "Users that require more sophisticated representations of time are encouraged to import a temporal extension of BFO-Core provided by the BFO development team. See documentation for guidance: <Link>" xsd:string
+domain: BFO:0000031 ! generically dependent continuant
+inverse_of: BFO:0000101 ! is carrier of
+
+[Typedef]
+id: BFO:0000101
+name: is carrier of
+property_value: definition "b is carrier of c =Def there is some time t such that c generically depends on b at t" xsd:string
+property_value: http://purl.org/dc/elements/1.1/identifier "254-BFO" xsd:string
+property_value: scopeNote "Users that require more sophisticated representations of time are encouraged to import a temporal extension of BFO-Core provided by the BFO development team. See documentation for guidance: <Link>" xsd:string
+range: BFO:0000031 ! generically dependent continuant
+
+[Typedef]
+id: BFO:0000194
+name: specifically depended on by
+property_value: altLabel "s-depended on by" xsd:string
+property_value: definition "b specifically depended on by c =Def c specifically depends on b" xsd:string
+property_value: example "Coloured object specifically depended on by colour" xsd:string
+property_value: http://purl.org/dc/elements/1.1/identifier "260-BFO" xsd:string
+range: BFO:0000020 ! specifically dependent continuant
+inverse_of: BFO:0000195 ! specifically depends on
+
+[Typedef]
+id: BFO:0000195
+name: specifically depends on
+property_value: altLabel "s-depends on" xsd:string
+property_value: definition "(Elucidation) specifically depends on is a relation between a specifically dependent continuant b and specifically dependent continuant or independent continuant that is not a spatial region c such that b and c share no parts in common & b is of a nature such that at all times t it cannot exist unless c exists & b is not a boundary of c" xsd:string
+property_value: example "A shape specifically depends on the shaped object; hue, saturation and brightness of a colour sample specifically depends on each other" xsd:string
+property_value: http://purl.org/dc/elements/1.1/identifier "012-BFO" xsd:string
+property_value: scopeNote "The analogue of specifically depends on for occurrents is has participant." xsd:string
+domain: BFO:0000020 ! specifically dependent continuant
+
+[Typedef]
+id: BFO:0000196
+name: bearer of
+property_value: definition "b bearer of c =Def c inheres in b" xsd:string
+property_value: example "A patch of ink is the bearer of a colour quality; an organism is the bearer of a temperature quality" xsd:string
+property_value: http://purl.org/dc/elements/1.1/identifier "053-BFO" xsd:string
+range: BFO:0000020 ! specifically dependent continuant
+is_a: BFO:0000194 ! specifically depended on by
+inverse_of: BFO:0000197 ! inheres in
+
+[Typedef]
+id: BFO:0000197
+name: inheres in
+property_value: definition "b inheres in c =Def b is a specifically dependent continuant & c is an independent continuant that is not a spatial region & b specifically depends on c" xsd:string
+property_value: example "A shape inheres in a shaped object; a mass inheres in a material entity" xsd:string
+property_value: http://purl.org/dc/elements/1.1/identifier "051-BFO" xsd:string
+domain: BFO:0000020 ! specifically dependent continuant
+is_a: BFO:0000195 ! specifically depends on
+
+[Typedef]
+id: GEOCORE:0000013
+name: generated by
+def: "A relation between an 'earth material' or 'geological object', and a process, in which the continuant was generated by the process" []
+property_value: IAO:0000116 "When a geological process creates a new geological object or earth material, we\nsay that it generated this new geological object or earth material. Thus, every instance of earth material and geological object have a unique generation relation with one instance of geological process." xsd:string
+range: GEOCORE:0000002 ! geological process
+is_a: BFO:0000056 ! participates in
+is_asymmetric: true
+
+[Typedef]
+id: GEOCORE:0000014
+name: generated in
+def: "The Geological Time Interval in which the object was generated." []
+
+[Typedef]
+id: GEOCORE:0000015
+name: has age
+def: "The relation between a Geological Object and its Geological Age." []
+is_a: BFO:0000196 ! bearer of
+inverse_of: GEOCORE:0000016 ! age of
+
+[Typedef]
+id: GEOCORE:0000016
+name: age of
+def: "The relation between a Geological Age and a Geological Object. Inverse of has age relation." []
+is_a: BFO:0000197 ! inheres in
+
+[Typedef]
+id: GEOCORE:0000017
+name: constituted by
+def: "The relation between some material entity and the material that it is made of." []
+property_value: IAO:0000116 "This is a material constitution relation intended to represent the relationship between material objects, such as geological objects and earth materials, or aggregates of them." xsd:string
+property_value: IAO:0000119 "Evnine, S. J. (2011). Constitution and composition: Three approaches to their relation. ProtoSociology, 27, 212-235." xsd:string
+is_asymmetric: true
+

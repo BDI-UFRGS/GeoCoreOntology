@@ -1,0 +1,59 @@
+Prefix: allocatedto: <http://purl.obolibrary.org/obo/IAO_0000597>
+Prefix: dce: <http://purl.org/dc/elements/1.1/>
+Prefix: iddigits: <http://purl.obolibrary.org/obo/IAO_0000596>
+Prefix: idprefix: <http://purl.obolibrary.org/obo/IAO_0000599>
+Prefix: idrange: <http://purl.obolibrary.org/obo/ro/idrange/>
+Prefix: idsfor: <http://purl.obolibrary.org/obo/IAO_0000598>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: : <https://www.inf.ufrgs.br/bdi/ontologies/geocore-idranges.owl>
+
+
+
+Ontology: <https://www.inf.ufrgs.br/bdi/ontologies/geocore-idranges.owl>
+
+
+Annotations: 
+    <http://purl.obolibrary.org/obo/IAO_0000596> 7,
+    <http://purl.obolibrary.org/obo/IAO_0000598> "GEOCORE",
+    <http://purl.obolibrary.org/obo/IAO_0000599> "https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_"
+
+AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000596>
+
+    
+AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000597>
+
+    
+AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000598>
+
+    
+AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000599>
+
+    
+Datatype: <http://purl.obolibrary.org/obo/ro/idrange/1>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000597> "Luan Garcia"
+    
+    EquivalentTo: 
+        xsd:integer[>= 0 , <= 300]
+    
+    
+Datatype: <http://purl.obolibrary.org/obo/ro/idrange/2>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000597> "Alcides Lopes"
+    
+    EquivalentTo: 
+        xsd:integer[>= 301 , <= 600]
+    
+    
+Datatype: rdf:PlainLiteral
+
+    
+Datatype: xsd:integer
+
+    

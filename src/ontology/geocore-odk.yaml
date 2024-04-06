@@ -1,0 +1,18 @@
+id: geocore
+title: GeoCore Ontology
+github_org: BDI-UFRGS
+git_main_branch: master
+repo: GeoCoreOntology
+uribase: https://www.inf.ufrgs.br/bdi/ontologies
+license: https://creativecommons.org/licenses/by-nc/4.0/
+release_artefacts:
+  - base
+  - full
+  - simple
+primary_release: full
+ci:
+  - github_actions
+import_group:
+  products:
+    - id: bfo2020
+      mirror_from: http://purl.obolibrary.org/obo/bfo/2020/bfo-core.owl
